@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>dice</host>
+
+	<overview>
+		<zoom>.35</zoom>
+		<position>2000, 2000</position>
+	</overview>
+
+	<miniMap>boards.samAndCatBoardMap</miniMap>
+
+	<tiles>    
+		<reds>0, 11, 16 ,17, 29, 31</reds>
+		<blues>4, 6, 7, 15, 22, 25, 28, 34, 40</blues>
+		<shops>3, 10, 35, 39</shops>
+		<goodBad>14, 21, 36, 41</goodBad>
+		<trivias>2, 8, 9, 13, 20, 38</trivias>
+		<surprises>1, 23, 26, 32</surprises>
+		<challenges>5, 18, 27, 33, 37</challenges>
+		<extraRolls>12, 19, 24, 30</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteSamAndCat</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="tandy">26</tileGroup>
+		<tileGroup id="dice">32</tileGroup>
+		<tileGroup id="nona">1</tileGroup>
+		<tileGroup id="murf">23</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="tandy" mc="tandy" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="dice" mc="dice" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="murf" mc="murf" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="nona" mc="nona" onLandedOnTile="givingCoin" onApplyEffect="afterGivingCoin"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+
+		<outcome tiles="tandy" weight="20" messageId="tandyMessage1" avatarId="tandy" effect="-c" character="tandy"/>
+		<outcome tiles="dice" weight="20" messageId="diceMessage1" avatarId="dice" effect="+c" character="dice"/>
+		<outcome tiles="murf" weight="20" messageId="murfMessage1" avatarId="murf" effect="-c" character="murf"/>
+
+		<outcome tiles="nona" weight="20" messageId="nonaMessage1" avatarId="nona" effect="+c" character="nona"/>
+		<outcome tiles="nona" weight="20" messageId="nonaMessage2" avatarId="nona" effect="give" character="nona"/>
+	</outcomes>
+
+</board>

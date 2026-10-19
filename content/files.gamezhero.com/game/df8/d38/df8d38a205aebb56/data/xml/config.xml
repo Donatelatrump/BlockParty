@@ -1,0 +1,31 @@
+<config>
+	<serviceSettings>
+		<servicesModuleURL>nick_services_module.swf</servicesModuleURL>
+		<!-- Set to FALSE to disable all Nick Services completely. TRUE will follow the specific service settings. -->
+		<enableServices>false</enableServices>
+		<enableLogin>false</enableLogin>
+		<enableLeaderboard>false</enableLeaderboard>
+		<enableNickPoints>false</enableNickPoints>
+		<enableTracking>false</enableTracking>
+		<enableAchievements>false</enableAchievements>
+		<enablePrinting>true</enablePrinting>
+		<serviceManagerURL>/common/flash/services/ServiceManager.swf</serviceManagerURL>
+		<serviceManagerConfigURL>/common/flash/services/data/services.xml</serviceManagerConfigURL>
+	</serviceSettings>
+
+	<tracking>
+		<type>
+			<enabled>true</enabled>
+			<functionToCall>trackKidsGamePlay</functionToCall>
+			<onPlay enabled="true">@GAMENAME@</onPlay>
+			<onInstructions enabled="false"></onInstructions>
+			<onPlayAgain enabled="true">@GAMENAME@</onPlayAgain>
+		</type>
+	</tracking>
+
+	<leaderBoard>
+		<gameID>block-party-hsb</gameID>
+	</leaderBoard>
+
+	<logo enabled="true"><!--/images/samplelogo.png--></logo>
+</config>

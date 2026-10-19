@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nicktoons Block Party</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>%F0%9F%8E%AE</text></svg>"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0b0a1c;
+        color: #fff;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+      #wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
+      }
+      h1 {
+        margin: 4px 0 0;
+        font-size: 20px;
+      }
+      #status {
+        font-size: 13px;
+        opacity: 0.75;
+        min-height: 1.2em;
+      }
+      #container {
+        width: 960px;
+        max-width: 100%;
+      }
+      ruffle-player {
+        width: 100%;
+        aspect-ratio: 960 / 500;
+        display: block;
+        background: #000;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>Nicktoons Block Party</h1>
+      <div id="status">Cargando…</div>
+      <div id="container"></div>
+    </div>
+
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        autoplay: 'on',
+        unmuteOverlay: 'hidden',
+        letterbox: 'on',
+        warnOnUnsupportedContent: true,
+        scale: 'showAll',
+        backgroundColor: '#000000',
+        logLevel: 'debug',
+      };
+
+      // El juego original, tal cual está en la carpeta del repositorio.
+      // ?swf=<ruta> permite probar el otro loader (main-flash.swf).
+      const DEFAULT_SWF =
+        '/content/www.funkypotato.com/gamez/nick-block-party/main-flash.swf';
+      const GAME_URL = new URLSearchParams(location.search).get('swf') || DEFAULT_SWF;
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const status = document.getElementById('status');
+        window.__ruffle = { ready: false, error: null, logs: [] };
+        try {
+          const ruffle = window.RufflePlayer.newest();
+          const player = ruffle.createPlayer();
+          document.getElementById('container').appendChild(player);
+          player
+            .ruffle()
+            .load(GAME_URL)
+            .then(() => {
+              window.__ruffle.ready = true;
+              status.textContent = 'Juego cargado';
+            })
+            .catch((e) => {
+              window.__ruffle.error = String(e);
+              status.textContent = 'Error cargando el juego: ' + e;
+            });
+        } catch (e) {
+          window.__ruffle.error = String(e);
+          status.textContent = 'No se pudo iniciar Ruffle: ' + e;
+        }
+      });
+    </script>
+    <script src="/blockparty/ruffle/ruffle.js"></script>
+  </body>
+</html>

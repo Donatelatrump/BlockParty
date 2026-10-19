@@ -1,0 +1,17 @@
+.vercel
+.env*
+
+# Installed dependencies and generated output
+node_modules/
+dist/
+.test-build/
+.browser-build/
+.asset-extraction/
+.tmp-extracted/
+.browser-profile/
+.browser-review-profile/
+screenshots/
+screenshots-ruffle/
+.tmp-*
+*.log
+.claude/settings.local.json

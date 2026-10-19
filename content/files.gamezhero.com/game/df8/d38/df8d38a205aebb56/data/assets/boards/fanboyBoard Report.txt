@@ -1,0 +1,436 @@
+fanboyBoard.swf Movie Report
+-----------------------------
+
+Frame #    Frame Bytes    Total Bytes    Scene
+-------    -----------    -----------    ----------------
+      1        9632914        9632914    Scene 1 (AS 3.0 Classes Export Frame)
+
+Scene                        Shape Bytes    Text Bytes    ActionScript Bytes
+-------------------------    -----------    ----------    ------------------
+Scene 1                                0             0                     0
+
+Symbol                       Shape Bytes    Text Bytes    ActionScript Bytes
+-------------------------    -----------    ----------    ------------------
+kyle_fx2                               0             0                     0
+kyle_fx                                0             0                     0
+manarctica_idle                        0             0                     0
+Tween 1                                0             0                     0
+boardOver                              0             0                     0
+path                                   0             0                     0
+sheenBoard                             0             0                     0
+boardBack                              0             0                     0
+tile                                 254             0                     0
+circle                               113             0                     0
+arrowMain                             94             0                     0
+arrow                                  0             0                     0
+coin                                   0             0                     0
+dorkus                                 0             0                     0
+kyle                                 127             0                     0
+yo                                     0             0                     0
+boog                                   0             0                     0
+dollarnator                            0             0                     0
+poopatine                              0             0                     0
+manarctica                           169             0                     0
+oz                                     0             0                     0
+spots                                767             0                     0
+txt_rondaMC                            0           164                     0
+txt_ronda                             52             0                     0
+black                                 40             0                     0
+arrows copy                            0             0                     0
+map_anim                               0             0                     0
+map                                    0             0                     0
+sombra                                 0             0                     0
+
+
+Tweened Shapes: 1221 bytes
+
+Font Name                 Bytes        Characters    
+----------------------    ---------    --------------
+Nougat                          701    
+
+ActionScript Bytes    Location
+------------------    --------
+              7927    ActionScript 3.0 Classes
+
+Bitmap                     Compressed    Compression
+-----------------------    ----------  --------  -----------
+fanboyMinimap                   3784      880200   Lossless
+mapMiniArrow                     122         576   Lossless
+sombra.png                      1277       18360   JPEG Quality=80
+dorkus_0001.png                 4315       74088   JPEG Quality=80
+dorkus_0002.png                 4267       74088   JPEG Quality=80
+dorkus_0003.png                 4273       74088   JPEG Quality=80
+dorkus_0004.png                 4201       74088   JPEG Quality=80
+dorkus_0005.png                 4252       74088   JPEG Quality=80
+dorkus_0006.png                 4207       74088   JPEG Quality=80
+dorkus_0007.png                 4228       74088   JPEG Quality=80
+dorkus_0008.png                 4241       74088   JPEG Quality=80
+dorkus_0009.png                 4233       74088   JPEG Quality=80
+dorkus_0010.png                 4186       74088   JPEG Quality=80
+dorkus_0011.png                 4248       74088   JPEG Quality=80
+dorkus_0012.png                 4239       74088   JPEG Quality=80
+dorkus_0013.png                 4266       74088   JPEG Quality=80
+dorkus_0014.png                 4299       74088   JPEG Quality=80
+dorkus_0015.png                 4313       74088   JPEG Quality=80
+dorkus_0016.png                 4375       74088   JPEG Quality=80
+dorkus_0017.png                 4558       74088   JPEG Quality=80
+dorkus_0018.png                 4364       74088   JPEG Quality=80
+dorkus_0019.png                 4173       74088   JPEG Quality=80
+dorkus_0020.png                 4242       74088   JPEG Quality=80
+dorkus_0021.png                 4189       74088   JPEG Quality=80
+dorkus_0022.png                 4206       74088   JPEG Quality=80
+dorkus_0023.png                 4192       74088   JPEG Quality=80
+dorkus_0024.png                 4195       74088   JPEG Quality=80
+dorkus_0025.png                 4218       74088   JPEG Quality=80
+dorkus_0026.png                 4185       74088   JPEG Quality=80
+dorkus_0027.png                 4095       74088   JPEG Quality=80
+dorkus_0028.png                 3871       74088   JPEG Quality=80
+dorkus_0029.png                 3908       74088   JPEG Quality=80
+dorkus_0030.png                 4320       74088   JPEG Quality=80
+dorkus_0031.png                 4472       74088   JPEG Quality=80
+dorkus_0032.png                 4295       74088   JPEG Quality=80
+dorkus_0033.png                 4491       74088   JPEG Quality=80
+dorkus_0034.png                 4234       74088   JPEG Quality=80
+dorkus_0035.png                 4107       74088   JPEG Quality=80
+dorkus_0036.png                 4086       74088   JPEG Quality=80
+dorkus_0037.png                 4102       74088   JPEG Quality=80
+dorkus_0038.png                 4124       74088   JPEG Quality=80
+dorkus_0039.png                 4112       74088   JPEG Quality=80
+dorkus_0040.png                 4099       74088   JPEG Quality=80
+dorkus_0041.png                 4096       74088   JPEG Quality=80
+dorkus_0042.png                 4120       74088   JPEG Quality=80
+dorkus_0043.png                 4096       74088   JPEG Quality=80
+dorkus_0044.png                 4106       74088   JPEG Quality=80
+dorkus_0045.png                 4110       74088   JPEG Quality=80
+dorkus_0046.png                 4098       74088   JPEG Quality=80
+dorkus_0047.png                 4109       74088   JPEG Quality=80
+dorkus_0048.png                 4124       74088   JPEG Quality=80
+dorkus_0049.png                 4100       74088   JPEG Quality=80
+dorkus_0050.png                 4067       74088   JPEG Quality=80
+dorkus_0051.png                 4353       74088   JPEG Quality=80
+dorkus_0052.png                 4514       74088   JPEG Quality=80
+dorkus_0053.png                 4688       74088   JPEG Quality=80
+dorkus_0054.png                 4603       74088   JPEG Quality=80
+dorkus_0055.png                 4328       74088   JPEG Quality=80
+fanboyBoard                  6437628    46325888   Imported JPEG=102
+boog_02_0001.png                6959      192444   JPEG Quality=80
+ChimpChomp                      5060       44144   JPEG Quality=80
+boog_02_0003.png                6929      192444   JPEG Quality=80
+boog_02_0005.png                6933      192444   JPEG Quality=80
+boog_02_0007.png                6845      192444   JPEG Quality=80
+boog_02_0009.png                6865      192444   JPEG Quality=80
+boog_02_0011.png                6968      192444   JPEG Quality=80
+boog_02_0013.png                6941      192444   JPEG Quality=80
+boog_02_0015.png                6969      192444   JPEG Quality=80
+boog_02_0017.png                6864      192444   JPEG Quality=80
+boog_02_0019.png                6845      192444   JPEG Quality=80
+boog_02_0021.png                6925      192444   JPEG Quality=80
+boog_02_0023.png                6934      192444   JPEG Quality=80
+boog_02_0025.png                8111      192444   JPEG Quality=80
+boog_02_0027.png                8182      192444   JPEG Quality=80
+boog_02_0029.png                8370      192444   JPEG Quality=80
+boog_02_0031.png                8097      192444   JPEG Quality=80
+boog_02_0033.png                7943      192444   JPEG Quality=80
+boog_02_0035.png                7800      192444   JPEG Quality=80
+boog_02_0037.png                7519      192444   JPEG Quality=80
+boog_02_0039.png                7481      192444   JPEG Quality=80
+boog_02_0041.png                7624      192444   JPEG Quality=80
+boog_02_0043.png                7966      192444   JPEG Quality=80
+boog_02_0045.png                8119      192444   JPEG Quality=80
+boog_02_0047.png                8262      192444   JPEG Quality=80
+boog_02_0049.png                8357      192444   JPEG Quality=80
+boog_02_0051.png                8349      192444   JPEG Quality=80
+boog_02_0053.png                8357      192444   JPEG Quality=80
+boog_02_0055.png                8268      192444   JPEG Quality=80
+boog_02_0057.png                8102      192444   JPEG Quality=80
+boog_02_0059.png                7764      192444   JPEG Quality=80
+boog_02_0061.png                7525      192444   JPEG Quality=80
+boog_02_0063.png                7481      192444   JPEG Quality=80
+boog_02_0065.png                7481      192444   JPEG Quality=80
+boog_02_0067.png                7966      192444   JPEG Quality=80
+boog_02_0069.png                8119      192444   JPEG Quality=80
+boog_02_0071.png                8262      192444   JPEG Quality=80
+boog_02_0073.png                8357      192444   JPEG Quality=80
+boog_02_0075.png                8349      192444   JPEG Quality=80
+boog_02_0077.png                8357      192444   JPEG Quality=80
+boog_02_0079.png                8268      192444   JPEG Quality=80
+boog_02_0081.png                8102      192444   JPEG Quality=80
+boog_02_0083.png                7764      192444   JPEG Quality=80
+boog_02_0085.png                7525      192444   JPEG Quality=80
+boog_02_0087.png                7481      192444   JPEG Quality=80
+boog_02_0089.png                7624      192444   JPEG Quality=80
+boog_02_0091.png                7966      192444   JPEG Quality=80
+boog_02_0093.png                8119      192444   JPEG Quality=80
+boog_02_0095.png                8262      192444   JPEG Quality=80
+boog_02_0097.png                8357      192444   JPEG Quality=80
+boog_02_0099.png                8349      192444   JPEG Quality=80
+boog_02_0101.png                8357      192444   JPEG Quality=80
+boog_02_0103.png                8268      192444   JPEG Quality=80
+boog_02_0105.png                8102      192444   JPEG Quality=80
+boog_02_0107.png                7764      192444   JPEG Quality=80
+boog_02_0109.png                7525      192444   JPEG Quality=80
+boog_02_0111.png                7887      192444   JPEG Quality=80
+boog_02_0113.png                7944      192444   JPEG Quality=80
+boog_02_0115.png                7571      192444   JPEG Quality=80
+dolarnator_0001.png            12078      282988   JPEG Quality=80
+dolarnator_0002.png            12139      282988   JPEG Quality=80
+dolarnator_0003.png            12117      282988   JPEG Quality=80
+dolarnator_0004.png            12162      282988   JPEG Quality=80
+dolarnator_0005.png            12202      282988   JPEG Quality=80
+dolarnator_0006.png            12202      282988   JPEG Quality=80
+dolarnator_0007.png            12182      282988   JPEG Quality=80
+dolarnator_0008.png            12201      282988   JPEG Quality=80
+dolarnator_0009.png            12242      282988   JPEG Quality=80
+dolarnator_0010.png            12303      282988   JPEG Quality=80
+dolarnator_0011.png            12257      282988   JPEG Quality=80
+dolarnator_0012.png            12303      282988   JPEG Quality=80
+dolarnator_0013.png            12242      282988   JPEG Quality=80
+dolarnator_0014.png            12199      282988   JPEG Quality=80
+dolarnator_0015.png            12183      282988   JPEG Quality=80
+dolarnator_0016.png            12203      282988   JPEG Quality=80
+dolarnator_0017.png            12203      282988   JPEG Quality=80
+dolarnator_0018.png            12162      282988   JPEG Quality=80
+dolarnator_0019.png            12120      282988   JPEG Quality=80
+dolarnator_0021.png            12078      282988   JPEG Quality=80
+dolarnator_0022.png            12401      282988   JPEG Quality=80
+dolarnator_0023.png            12688      282988   JPEG Quality=80
+dolarnator_0024.png            12670      282988   JPEG Quality=80
+dolarnator_0025.png            14545      282988   JPEG Quality=80
+dolarnator_0026.png            14950      282988   JPEG Quality=80
+dolarnator_0027.png            15025      282988   JPEG Quality=80
+dolarnator_0028.png            14778      282988   JPEG Quality=80
+dolarnator_0029.png            13869      282988   JPEG Quality=80
+dolarnator_0030.png            13203      282988   JPEG Quality=80
+dolarnator_0031.png            12945      282988   JPEG Quality=80
+dolarnator_0032.png            13586      282988   JPEG Quality=80
+dolarnator_0033.png            14973      282988   JPEG Quality=80
+dolarnator_0034.png            14962      282988   JPEG Quality=80
+dolarnator_0035.png            14888      282988   JPEG Quality=80
+dolarnator_0036.png            13709      282988   JPEG Quality=80
+dolarnator_0037.png            12532      282988   JPEG Quality=80
+dolarnator_0038.png            12567      282988   JPEG Quality=80
+dolarnator_0039.png            12667      282988   JPEG Quality=80
+dolarnator_0040.png            12249      282988   JPEG Quality=80
+dolarnator_0041.png            12078      282988   JPEG Quality=80
+manarctica_0001.png             9160      340000   JPEG Quality=80
+aparicion_plataforma_0001.png      1859      160000   JPEG Quality=80
+aparicion_plataforma_0002.png      3020      160000   JPEG Quality=80
+aparicion_plataforma_0003.png      5024      160000   JPEG Quality=80
+aparicion_plataforma_0004.png      6761      160000   JPEG Quality=80
+aparicion_plataforma_0005.png      8111      160000   JPEG Quality=80
+aparicion_plataforma_0006.png      9142      160000   JPEG Quality=80
+aparicion_plataforma_0007.png     10279      160000   JPEG Quality=80
+aparicion_plataforma_0008.png     10981      160000   JPEG Quality=80
+aparicion_plataforma_0009.png     12005      160000   JPEG Quality=80
+aparicion_plataforma_0010.png     12633      160000   JPEG Quality=80
+aparicion_plataforma_0011.png     13366      160000   JPEG Quality=80
+aparicion_plataforma_0012.png     13712      160000   JPEG Quality=80
+manarctica_0003.png            10383      340000   JPEG Quality=80
+aparicion_plataforma_0013.png     14567      160000   JPEG Quality=80
+aparicion_plataforma_0014.png     15585      160000   JPEG Quality=80
+manarctica_0006.png             9598      340000   JPEG Quality=80
+aparicion_plataforma_0015.png     15186      160000   JPEG Quality=80
+aparicion_plataforma_0016.png     14776      160000   JPEG Quality=80
+manarctica_0007.png             9390      340000   JPEG Quality=80
+aparicion_plataforma_0017.png     14311      160000   JPEG Quality=80
+aparicion_plataforma_0018.png     13827      160000   JPEG Quality=80
+manarctica_0008.png            11061      340000   JPEG Quality=80
+aparicion_plataforma_0019.png     13215      160000   JPEG Quality=80
+aparicion_plataforma_0020.png     12401      160000   JPEG Quality=80
+manarctica_0010.png            11192      340000   JPEG Quality=80
+aparicion_plataforma_0021.png     11644      160000   JPEG Quality=80
+aparicion_plataforma_0022.png     10773      160000   JPEG Quality=80
+manarctica_0011.png            10455      340000   JPEG Quality=80
+aparicion_plataforma_0023.png      9940      160000   JPEG Quality=80
+aparicion_plataforma_0024.png      8941      160000   JPEG Quality=80
+manarctica_0012.png             9806      340000   JPEG Quality=80
+aparicion_plataforma_0025.png      8040      160000   JPEG Quality=80
+aparicion_plataforma_0026.png      7021      160000   JPEG Quality=80
+manarctica_0013.png             9136      340000   JPEG Quality=80
+aparicion_plataforma_0027.png      6133      160000   JPEG Quality=80
+aparicion_plataforma_0028.png      5244      160000   JPEG Quality=80
+manarctica_0014.png             9161      340000   JPEG Quality=80
+aparicion_plataforma_0029.png      4282      160000   JPEG Quality=80
+aparicion_plataforma_0030.png      3514      160000   JPEG Quality=80
+manarctica_0015.png             9182      340000   JPEG Quality=80
+aparicion_plataforma_0031.png      2793      160000   JPEG Quality=80
+aparicion_plataforma_0032.png      2137      160000   JPEG Quality=80
+kyle_0001.png                   6528      131400   JPEG Quality=80
+kyle_0002.png                   6571      131400   JPEG Quality=80
+kyle_0003.png                   6728      131400   JPEG Quality=80
+kyle_0004.png                   6776      131400   JPEG Quality=80
+kyle_0005.png                   6705      131400   JPEG Quality=80
+kyle_0006.png                   6745      131400   JPEG Quality=80
+kyle_0007.png                   6754      131400   JPEG Quality=80
+kyle_0008.png                   6894      131400   JPEG Quality=80
+kyle_0009.png                   6844      131400   JPEG Quality=80
+kyle_0010.png                   6832      131400   JPEG Quality=80
+kyle_0011.png                   6843      131400   JPEG Quality=80
+kyle_0012.png                   6892      131400   JPEG Quality=80
+kyle_0013.png                   6754      131400   JPEG Quality=80
+kyle_0014.png                   6745      131400   JPEG Quality=80
+kyle_0015.png                   6706      131400   JPEG Quality=80
+kyle_0016.png                   6777      131400   JPEG Quality=80
+kyle_0017.png                   6728      131400   JPEG Quality=80
+kyle_0018.png                   6575      131400   JPEG Quality=80
+kyle_0019.png                   6528      131400   JPEG Quality=80
+kyle_0020.png                   6592      131400   JPEG Quality=80
+kyle_0021.png                   6906      131400   JPEG Quality=80
+kyle_0022.png                   7762      131400   JPEG Quality=80
+kyle_0023.png                   7951      131400   JPEG Quality=80
+kyle_0024.png                   7892      131400   JPEG Quality=80
+kyle_0025.png                   7816      131400   JPEG Quality=80
+kyle_0026.png                   7859      131400   JPEG Quality=80
+kyle_0027.png                   7520      131400   JPEG Quality=80
+kyle_0028.png                   6711      131400   JPEG Quality=80
+explosion_0001.png              2957      230400   JPEG Quality=80
+explosion_0002.png              3971      230400   JPEG Quality=80
+explosion_0003.png              8622      230400   JPEG Quality=80
+explosion_0004.png             11461      230400   JPEG Quality=80
+explosion_0005.png             15711      230400   JPEG Quality=80
+explosion_0006.png             16795      230400   JPEG Quality=80
+explosion_0007.png             16969      230400   JPEG Quality=80
+explosion_0008.png             16219      230400   JPEG Quality=80
+explosion_0009.png             14116      230400   JPEG Quality=80
+explosion_0010.png             12694      230400   JPEG Quality=80
+explosion_0011.png             10185      230400   JPEG Quality=80
+explosion_0012.png              7583      230400   JPEG Quality=80
+explosion_0013.png              5351      230400   JPEG Quality=80
+explosion_0014.png              3394      230400   JPEG Quality=80
+explosion_0015.png              1766      230400   JPEG Quality=80
+yo_0012.png                     5884      155296   JPEG Quality=80
+yo_0013.png                     6074      155296   JPEG Quality=80
+yo_0014.png                     6324      155296   JPEG Quality=80
+yo_0015.png                     6381      155296   JPEG Quality=80
+yo_0016.png                     6608      155296   JPEG Quality=80
+yo_0017.png                     6670      155296   JPEG Quality=80
+yo_0018.png                     6611      155296   JPEG Quality=80
+yo_0019.png                     6377      155296   JPEG Quality=80
+yo_0020.png                     6321      155296   JPEG Quality=80
+yo_0021.png                     6079      155296   JPEG Quality=80
+yo_0022.png                     5891      155296   JPEG Quality=80
+yo_0001.png                     9004      155296   JPEG Quality=80
+yo_0002.png                     9035      155296   JPEG Quality=80
+yo_0003.png                     8586      155296   JPEG Quality=80
+yo_0004.png                     8389      155296   JPEG Quality=80
+yo_0005.png                     8959      155296   JPEG Quality=80
+yo_0006.png                     9078      155296   JPEG Quality=80
+yo_0007.png                     9075      155296   JPEG Quality=80
+yo_0008.png                     8960      155296   JPEG Quality=80
+yo_0009.png                     8389      155296   JPEG Quality=80
+yo_0010.png                     8604      155296   JPEG Quality=80
+yo_0011.png                     9068      155296   JPEG Quality=80
+poopatine_0001.png             13696      592000   JPEG Quality=80
+poopatine_0002.png             13772      592000   JPEG Quality=80
+poopatine_0003.png             13785      592000   JPEG Quality=80
+poopatine_0004.png             13776      592000   JPEG Quality=80
+poopatine_0005.png             13774      592000   JPEG Quality=80
+poopatine_0006.png             13752      592000   JPEG Quality=80
+poopatine_0007.png             13771      592000   JPEG Quality=80
+poopatine_0008.png             13765      592000   JPEG Quality=80
+poopatine_0009.png             13796      592000   JPEG Quality=80
+poopatine_0010.png             13788      592000   JPEG Quality=80
+poopatine_0011.png             13685      592000   JPEG Quality=80
+poopatine_0012.png             14006      592000   JPEG Quality=80
+poopatine_0013.png             13811      592000   JPEG Quality=80
+poopatine_0014.png             14205      592000   JPEG Quality=80
+poopatine_0015.png             15188      592000   JPEG Quality=80
+poopatine_0016.png             15461      592000   JPEG Quality=80
+poopatine_0017.png             15085      592000   JPEG Quality=80
+poopatine_0018.png             15787      592000   JPEG Quality=80
+poopatine_0019.png             15795      592000   JPEG Quality=80
+poopatine_0020.png             15655      592000   JPEG Quality=80
+poopatine_0021.png             15486      592000   JPEG Quality=80
+poopatine_0022.png             14566      592000   JPEG Quality=80
+poopatine_0023.png             14971      592000   JPEG Quality=80
+poopatine_0024.png             15188      592000   JPEG Quality=80
+poopatine_0025.png             15465      592000   JPEG Quality=80
+poopatine_0026.png             15085      592000   JPEG Quality=80
+poopatine_0027.png             15788      592000   JPEG Quality=80
+poopatine_0028.png             15794      592000   JPEG Quality=80
+poopatine_0029.png             15655      592000   JPEG Quality=80
+poopatine_0030.png             15192      592000   JPEG Quality=80
+poopatine_0031.png             13669      592000   JPEG Quality=80
+poopatine_0032.png             13716      592000   JPEG Quality=80
+poopatine_0033.png             13887      592000   JPEG Quality=80
+poopatine_0034.png             13814      592000   JPEG Quality=80
+poopatine_0035.png             13696      592000   JPEG Quality=80
+oz_0001.png                     3709      137760   JPEG Quality=80
+oz_0002.png                     3760      137760   JPEG Quality=80
+oz_0003.png                     3815      137760   JPEG Quality=80
+oz_0004.png                     4073      137760   JPEG Quality=80
+oz_0005.png                     4178      137760   JPEG Quality=80
+oz_0006.png                     4286      137760   JPEG Quality=80
+oz_0007.png                     4343      137760   JPEG Quality=80
+oz_0008.png                     4427      137760   JPEG Quality=80
+oz_0009.png                     4460      137760   JPEG Quality=80
+oz_0010.png                     4236      137760   JPEG Quality=80
+oz_0011.png                     4200      137760   JPEG Quality=80
+oz_0012.png                     4004      137760   JPEG Quality=80
+oz_0013.png                     3773      137760   JPEG Quality=80
+oz_0014.png                     3709      137760   JPEG Quality=80
+oz_0015.png                     3833      137760   JPEG Quality=80
+oz_0016.png                     3899      137760   JPEG Quality=80
+oz_0017.png                     4114      137760   JPEG Quality=80
+oz_0018.png                     4290      137760   JPEG Quality=80
+oz_0019.png                     4457      137760   JPEG Quality=80
+oz_0020.png                     4411      137760   JPEG Quality=80
+oz_0021.png                     4388      137760   JPEG Quality=80
+oz_0022.png                     4321      137760   JPEG Quality=80
+oz_0023.png                     4275      137760   JPEG Quality=80
+oz_0024.png                     4157      137760   JPEG Quality=80
+oz_0025.png                     3919      137760   JPEG Quality=80
+oz_0026.png                     3769      137760   JPEG Quality=80
+oz_0027.png                     3709      137760   JPEG Quality=80
+oz_0028.png                     4367      137760   JPEG Quality=80
+oz_0029.png                     5126      137760   JPEG Quality=80
+oz_0030.png                     5470      137760   JPEG Quality=80
+oz_0031.png                     5444      137760   JPEG Quality=80
+oz_0032.png                     5209      137760   JPEG Quality=80
+oz_0033.png                     5423      137760   JPEG Quality=80
+oz_0034.png                     5810      137760   JPEG Quality=80
+oz_0035.png                     5960      137760   JPEG Quality=80
+oz_0036.png                     5824      137760   JPEG Quality=80
+oz_0037.png                     5438      137760   JPEG Quality=80
+oz_0038.png                     5242      137760   JPEG Quality=80
+oz_0039.png                     5084      137760   JPEG Quality=80
+oz_0040.png                     5362      137760   JPEG Quality=80
+oz_0041.png                     5646      137760   JPEG Quality=80
+oz_0042.png                     6004      137760   JPEG Quality=80
+oz_0043.png                     6161      137760   JPEG Quality=80
+oz_0044.png                     5627      137760   JPEG Quality=80
+oz_0045.png                     5079      137760   JPEG Quality=80
+oz_0046.png                     4673      137760   JPEG Quality=80
+oz_0047.png                     4042      137760   JPEG Quality=80
+oz_0048.png                     3709      137760   JPEG Quality=80
+blue_off.png                    6046       72912   JPEG Quality=80
+blue_on.png                     4694       75208   JPEG Quality=80
+red_off.png                     5867       72912   JPEG Quality=80
+red_on.png                      2966       55296   JPEG Quality=80
+shop_off.png                    7008       72912   JPEG Quality=80
+shop_on.png                     3296       37664   JPEG Quality=80
+green_off.png                   6769       72912   JPEG Quality=80
+green_on.png                    2980       37664   JPEG Quality=80
+skull_off.png                   6609       72912   JPEG Quality=80
+skull_on.png                    2155       37664   JPEG Quality=80
+exclamationmark_off.png         6424       72912   JPEG Quality=80
+exclamationmark_on.png          2851       37664   JPEG Quality=80
+dice_off.png                    6818       72912   JPEG Quality=80
+dice_on.png                     2810       37664   JPEG Quality=80
+questionmark_off.png            6745       72912   JPEG Quality=80
+questionmark_on.png             2951       37664   JPEG Quality=80
+energy_off.png                  6318       72912   JPEG Quality=80
+energy_on.png                   3113       37664   JPEG Quality=80
+01                               850       10404   Lossless
+05                              1590       10404   JPEG Quality=80
+03                              1649       10404   JPEG Quality=80
+02                              1581       10404   JPEG Quality=80
+04                              1614       10404   JPEG Quality=80
+TechoFrostyMart               136701     5150340   JPEG Quality=80
+Postes                         10733      752704   JPEG Quality=80
+Columna                         6320      135936   JPEG Quality=80
+Barandas                       16207      701092   JPEG Quality=80
+
+
+
+

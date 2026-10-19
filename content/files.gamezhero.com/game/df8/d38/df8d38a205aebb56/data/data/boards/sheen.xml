@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>emperor</host>
+
+	<overview>
+		<zoom>.36</zoom>
+		<position>1461, 935</position>
+	</overview>
+
+	<miniMap>boards.sheenBoardMap</miniMap>
+
+	<tiles>
+		<reds>8, 22, 35, 40</reds>
+		<blues>0, 9, 19, 20, 24, 29, 34, 36, 38</blues>
+		<shops>2, 11, 25, 42</shops>
+		<goodBad>3, 12, 16, 32, 44</goodBad>
+		<trivias>4, 14, 21, 30, 37</trivias>
+		<surprises>1, 7, 15, 18, 26, 31, 41</surprises>
+		<challenges>6, 10, 17, 28, 39, 45</challenges>
+		<extraRolls>5, 13, 23, 27, 33, 43</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteSheen</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="oom">1</tileGroup>
+		<tileGroup id="emperor">31</tileGroup>
+		<tileGroup id="nesmith">7</tileGroup>
+		<tileGroup id="torzilla">15</tileGroup>
+		<tileGroup id="firewaffle">18</tileGroup>
+		<tileGroup id="assefa">41</tileGroup>
+		<tileGroup id="chocktow">26</tileGroup>
+		<tileGroup id="dorkus">33</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="oom1" mc="oom" onLandedOnTile="givingCoin" onApplyEffect="idle"/>
+		<character id="oom2" mc="oom" onLandedOnTile="takingCoin" onApplyEffect="idle"/>
+		<character id="emperor" mc="emperor" onLandedOnTile="givingCoin"/>
+		<character id="nesmith" mc="nesmith" onLandedOnTile="givingCoin" onApplyEffect="afterGivingCoin"/>
+		<character id="torzilla" mc="torzilla" onApplyEffect="takingCoin"/>
+		<character id="firewaffle1" mc="firewaffle" onApplyEffect="takingCoin"/>
+		<character id="firewaffle2" mc="firewaffle" onLandedOnTile="givingCoin" onApplyEffect="idle"/>
+		<character id="assefa" mc="assefa" onLandedOnTile="givingCoin" onApplyEffect="afterGivingCoin"/>
+		<character id="chocktow" mc="chocktow" onApplyEffect="takingCoin"/>
+		<character id="dorkus" mc="dorkus" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+		<outcome tiles="oom" weight="20" messageId="oomMessage1" avatarId="oom" effect="-c" character="oom1"/>
+		<outcome tiles="oom" weight="20" messageId="oomMessage2" avatarId="oom" effect="+c" character="oom1"/>
+		<outcome tiles="oom" weight="20" messageId="oomMessage3" avatarId="oom" effect="-c" character="oom1"/>
+		<outcome tiles="oom" weight="20" messageId="oomMessage4" avatarId="oom" effect="-c" character="oom2"/>
+
+		<outcome tiles="emperor" weight="20" messageId="emperorMessage1" avatarId="emperor" effect="+c" character="emperor"/>
+		<outcome tiles="emperor" weight="20" messageId="emperorMessage2" avatarId="emperor" effect="+c" character="emperor"/>
+
+		<outcome tiles="nesmith" weight="20" messageId="nesmithMessage1" avatarId="nesmith" effect="+c" character="nesmith"/>
+
+		<outcome tiles="torzilla" weight="20" messageId="torzillaMessage1" avatarId="torzilla" effect="-c" character="torzilla"/>
+		<outcome tiles="torzilla" weight="20" messageId="torzillaMessage2" avatarId="torzilla" effect="-c" character="torzilla"/>
+
+		<outcome tiles="firewaffle" weight="20" messageId="firewaffleMessage1" avatarId="firewaffle" effect="-c" character="firewaffle"/>
+		<outcome tiles="firewaffle" weight="20" messageId="firewaffleMessage2" avatarId="firewaffle" effect="+c" character="firewaffle"/>
+		<outcome tiles="firewaffle" weight="20" messageId="firewaffleMessage3" avatarId="firewaffle" effect="-c" character="firewaffle"/>
+
+		<outcome tiles="assefa" weight="20" messageId="assefaMessage1" avatarId="assefa" effect="+c" character="assefa"/>
+		<outcome tiles="assefa" weight="20" messageId="assefaMessage2" avatarId="assefa" effect="+c" character="assefa"/>
+
+		<outcome tiles="chocktow" weight="20" messageId="chocktowMessage1" avatarId="chocktow" effect="-c" character="chocktow"/>
+
+		<outcome tiles="dorkus" weight="20" messageId="dorkusMessage1" avatarId="dorkus" effect="-c" character="dorkus"/>
+		<outcome tiles="dorkus" weight="20" messageId="dorkusMessage2" avatarId="dorkus" effect="-c" character="dorkus"/>
+	</outcomes>
+
+</board>

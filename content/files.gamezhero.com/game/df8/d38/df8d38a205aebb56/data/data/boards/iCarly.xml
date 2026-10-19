@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>spencer</host>
+
+	<overview>
+		<zoom>.36</zoom>
+		<position>1100, 4100</position>
+	</overview>
+
+	<miniMap>boards.iCarlyBoardMap</miniMap>
+
+	<tiles>
+		<reds>0,3, 8 ,17, 20, 25, 29, 38</reds>
+		<blues>4, 15, 19, 27, 31, 9, 34, 37</blues>
+		<shops>11, 33, 39</shops>
+		<goodBad>2, 10, 14, 21, 36, 43</goodBad>
+		<trivias>7, 42, 23</trivias>
+		<surprises>6, 16, 22, 32, 24</surprises>
+		<challenges>5, 13, 18, 28, 35, 40</challenges>
+		<extraRolls>1, 26, 12, 30, 41</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteiCarly</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="sam">6</tileGroup>
+		<!--<tileGroup id="spencer">13</tileGroup>-->
+		<tileGroup id="lewbert">16</tileGroup>
+		<tileGroup id="fred">22</tileGroup>
+		<tileGroup id="nevel">24</tileGroup>
+		<tileGroup id="gibby">32</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="sam" mc="sam" onLandedOnTile="talk"/>
+		<!--<character id="spencer" mc="spencer" onLandedOnTile="idle"/>-->
+		<character id="lewbert" mc="lewbert" onLandedOnTile="explo" onApplyEffect="gotoIdle"/>
+		<character id="fred" mc="fred" onLandedOnTile="talk"/>
+		<character id="nevel" mc="nevel" onLandedOnTile="talk"/>
+		<character id="gibby" mc="gibby" onLandedOnTile="dance" onApplyEffect="gotoIdle"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+
+		<outcome tiles="sam" weight="20" messageId="samanthaMessage1" avatarId="sam" effect="+c" character="sam"/>
+
+		<outcome tiles="fred" weight="20" messageId="freddieMessage1" avatarId="fred" effect="+c" character="fred"/>
+		<outcome tiles="fred" weight="20" messageId="freddieMessage2" avatarId="fred" effect="-c" character="fred"/>
+
+		<!--
+		<outcome tiles="spencer" weight="20" messageId="spencerMessage1" avatarId="spencer" effect="+c" character="spencer"/>
+		<outcome tiles="spencer" weight="20" messageId="spencerMessage2" avatarId="spencer" effect="-c" character="spencer"/>
+		-->
+
+		<outcome tiles="gibby" weight="20" messageId="gibbyMessage1" avatarId="gibby" effect="+c" character="gibby"/>
+		<outcome tiles="gibby" weight="20" messageId="gibbyMessage2" avatarId="gibby" effect="-c" character="gibby"/>
+
+		<outcome tiles="nevel" weight="20" messageId="nevelMessage1" avatarId="nevel" effect="-c" character="nevel"/>
+
+		<outcome tiles="lewbert" weight="20" messageId="lewbertMessage1" avatarId="lewbert" effect="+c" character="lewbert"/>
+		<outcome tiles="lewbert" weight="20" messageId="lewbertMessage2" avatarId="lewbert" effect="-c" character="lewbert"/>
+
+	</outcomes>
+
+</board>

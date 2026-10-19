@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration errorCode="0" errorName="OK">
+	<assets>
+		<group id="cdn">
+			<group id="preload">
+				<asset id="config" size="1046" url="xml/config.xml"/>
+				<group id="asstes" url="assets">
+					<asset id="loader" size="145847" url="ui/loader.swf"/>
+				</group>
+				<group id="fonts" url="fonts">
+					<asset id="fonts" size="48704" type="font" url="embeddedFonts.swf"/>
+				</group>
+				<asset id="nickLangFile" size="19866" url="xml/translation.xml"/>
+				<group id="data" url="data">
+					<group id="localizations" loadOnDemand="true" url="localizations">
+						<group id="lang" lang="en" url="en">
+							<asset id="langFile" size="53566" url="lang.xml"/>
+						</group>
+					</group>
+
+					<asset id="achievementData" size="639" url="achievements.xml"/>
+
+					<asset id="boardsList" size="639" url="boards.xml"/>
+					<asset id="store" size="789" url="store.xml"/>
+					<asset id="coins" size="1024" url="coins.xml"/>
+					<asset id="players" size="2116" url="players.xml"/>
+					<asset id="soundsFile" size="6335" url="sounds.xml"/>
+
+					<group id="boards" url="boards">
+						<asset id="bobData" size="8120" url="spongeBob.xml"/>
+						<asset id="sheenData" size="8120" url="sheen.xml"/>
+						<asset id="madagascarData" size="10137" url="madagascar.xml"/>
+						<asset id="iCarlyData" size="10137" url="iCarly.xml"/>
+						<asset id="victoriousData" size="10137" url="victorious.xml"/>
+						<asset id="fanboyData" size="10137" url="fanboy.xml"/>
+						<asset id="tuffPuppyData" size="10137" url="tuffPuppy.xml"/>
+						<asset id="tmntData" size="10137" url="tmnt.xml"/>
+						<asset id="samAndCatData" size="10137" url="samAndCat.xml"/>
+					</group>
+				</group>
+			</group>
+
+			<group id="load" loadOnDemand="true">
+				<group id="data" url="data">
+					<group id="trivias" url="trivias">
+						<asset id="bob" size="719881" url="bob.xml"/>
+						<asset id="madagascar" size="9766" url="madagascar.xml"/>
+						<asset id="sheen" size="9766" url="sheen.xml"/>
+						<asset id="iCarly" size="9766" url="iCarly.xml"/>
+						<asset id="victorious" size="9766" url="victorious.xml"/>
+						<asset id="fanboy" size="9766" url="fanboy.xml"/>
+						<asset id="tuffPuppy" size="9766" url="tuffPuppy.xml"/>
+						<asset id="tmnt" size="9766" url="tmnt.xml"/>
+						<asset id="samAndCat" size="9766" url="samAndCat.xml"/>
+						<asset id="img1" size="19312" url="imgs/img1.jpg"/>
+						<asset id="img2" size="36300" url="imgs/img2.jpg"/>
+						<asset id="img3" size="7721" url="imgs/img3.jpg"/>
+						<asset id="img4" size="24298" url="imgs/img4.jpg"/>
+						<asset id="img5" size="12710" url="imgs/img5.jpg"/>
+						<asset id="img6" size="29368" url="imgs/img6.jpg"/>
+						<asset id="img7" size="10906" url="imgs/img7.jpg"/>
+						<asset id="img8" size="11681" url="imgs/img8.png"/>
+						<asset id="img9" size="41584" url="imgs/img9.png"/>
+					</group>
+				</group>
+				<group id="flashRoot" url="assets">
+					<group id="core">
+						<group id="ui" url="ui">
+							<group id="menues" url="menues">
+								<asset id="menues" size="2287838" url="menues.swf"/>
+							</group>
+						</group>
+						<asset id="audioMenues" size="79783" url="audio/audioMenues.swf"/>
+					</group>
+
+					<group id="inGame" loadOnDemand="true">
+						<group id="core">
+							<asset id="commonChar" size="144801" url="characters/common.swf"/>
+							<asset id="commonBoard" size="1034326" url="boards/common.swf"/>
+							<asset id="ingame" size="2201439" url="ui/menues/ingame.swf"/>
+							<asset id="hud" size="1502053" url="ui/hud/hud.swf"/>
+							<group id="soundFXs" url="audio/fx">
+								<asset id="boardFXs" size="297980" url="board.swf"/>
+								<asset id="minigamesFXs" size="64000" url="minigames.swf"/>
+								<asset id="simonFX" size="64000" url="simon.swf"/>
+								<asset id="catcherFX" size="64000" url="catcher.swf"/>
+								<asset id="dodgeFX" size="64000" url="dodge.swf"/>
+								<asset id="airhockeyFX" size="64000" url="airhockey.swf"/>
+							</group>
+						</group>
+
+						<group id="characters" loadOnDemand="true" url="characters">
+							<asset id="bob" size="719881" url="bob.swf"/>
+							<asset id="fanboy" size="848948" url="fanboy.swf"/>
+							<asset id="sheen" size="788159" url="sheen.swf"/>
+							<asset id="skipper" size="486066" url="skipper.swf"/>
+							<asset id="tuff" size="708169" url="dudleypuppy.swf"/>
+							<asset id="tori" size="708169" url="tori.swf"/>
+							<asset id="carly" size="708169" url="carly.swf"/>
+							<asset id="chumchum" size="708169" url="chumchum.swf"/>
+							<asset id="kitty" size="708169" url="kitty.swf"/>
+							<asset id="mikey" size="708169" url="mikey.swf"/>
+							<asset id="sam" size="708169" url="sam.swf"/>
+							<asset id="cat" size="708169" url="cat.swf"/>
+						</group>
+
+						<group id="music" loadOnDemand="true" url="audio/music/boards">
+							<asset id="bobMusic" size="737667" url="bob.swf"/>
+							<asset id="madagascarMusic" size="665477" url="madagascar.swf"/>
+							<asset id="sheenMusic" size="665477" url="sheen.swf"/>
+							<asset id="iCarlyMusic" size="665477" url="icarly.swf"/>
+							<asset id="victoriousMusic" size="665477" url="victorious.swf"/>
+							<asset id="fanboyMusic" size="665477" url="fanboy.swf"/>
+							<asset id="tuffPuppyMusic" size="665477" url="tuffPuppy.swf"/>
+							<asset id="tmntMusic" size="665477" url="tmnt.swf"/>
+							<asset id="samAndCatMusic" size="665477" url="samAndCat.swf"/>
+						</group>
+
+						<group id="boards" url="boards">
+							<asset id="bobBoards" size="3273088" url="spongeBobBoard.swf"/>
+							<asset id="sheenBoards" size="3273088" url="sheenBoard.swf"/>
+							<asset id="madagascarBoards" size="5648665" url="madagascarBoard.swf"/>
+							<asset id="iCarlyBoards" size="5648665" url="iCarlyBoard.swf"/>
+							<asset id="victoriousBoards" size="5648665" url="victoriousBoard.swf"/>
+							<asset id="fanboyBoards" size="5648665" url="fanboyBoard.swf"/>
+							<asset id="tuffPuppyBoards" size="5648665" url="tuffPuppyBoard.swf"/>
+							<asset id="tmntBoards" size="5648665" url="tmntBoard.swf"/>
+							<asset id="samAndCatBoards" size="5648665" url="samAndCatBoard.swf"/>
+						</group>
+
+						<group id="minigames" url="minigames">
+							<asset id="ingameMG" size="186398" url="ingame.swf"/>
+
+							<group id="challenges" url="challenges">
+								<group id="patrick" url="patrick">
+									<asset id="patrickChallenges" size="179104" url="patrick.swf"/>
+									<asset id="patrickSFXs" size="38627" url="patrickSFXs.swf"/>
+								</group>
+								<group id="cardmonte" url="cardmonte">
+									<asset id="cardmonte" size="646373" url="cardmonte.swf"/>
+								</group>
+							</group>
+
+							<group id="games" loadOnDemand="true">
+								<group id="fleas" url="fleas">
+									<asset id="fleas" size="30825" url="fleas.swf"/>
+									<asset id="worldFleas" size="1351927" url="world.swf"/>
+									<asset id="tweezers" size="39186" url="tweezers.swf"/>
+									<asset id="fleasMusic" size="364357" url="fleasMusic.swf"/>
+									<asset id="fleasSFXs" size="8644" url="fleasSFXs.swf"/>
+								</group>
+								<group id="lockers" url="lockers">
+									<asset id="mainLockers" size="304221" url="world.swf"/>
+								</group>
+								<group id="escapeyo" url="escapeyo">
+									<asset id="mainEscapeyo" size="304221" url="world.swf"/>
+								</group>
+								<group id="pizza_pursuit" url="pizza_pursuit">
+									<asset id="mainPizzaPursuit" size="515466" url="world.swf"/>
+								</group>
+								<group id="king_of_the_heap" url="king_of_the_heap">
+									<asset id="mainKingOfTheHeap" size="731239" url="world.swf"/>
+								</group>
+								<group id="apartment_maze" url="apartment_maze">
+									<asset id="mainApartmentMaze" size="731239" url="world.swf"/>
+								</group>
+								<group id="demanding_goat" url="demanding_goat">
+									<asset id="mainDemandingGoat" size="731239" url="world.swf"/>
+								</group>
+								<group id="lolly" url="lollypop">
+									<asset id="worldLollypop" size="489799" url="world.swf"/>
+									<asset id="private" size="409102" url="private.swf"/>
+								</group>
+
+								<group id="jumper" url="jumper">
+									<asset id="mainJumper" size="1167363" url="main.swf"/>
+								</group>
+
+								<group id="falling" url="falling">
+									<asset id="mainFalling" size="4505" url="main.swf"/>
+								</group>
+
+								<group id="teetering" url="teetering">
+									<asset id="teetering" size="304221" url="teetering.swf"/>
+								</group>
+
+								<group id="escape" url="escape">
+									<asset id="worldEscape" size="441489" url="world.swf"/>
+									<asset id="charactersEscape" size="1139164" url="characters.swf"/>
+								</group>
+
+								<group id="airhockey" url="airhockey">
+									<asset id="worldAirhockey" size="171884" url="world.swf"/>
+								</group>
+
+								<group id="bouncybed" url="bed">
+									<asset id="bedworld" size="171884" url="world.swf"/>
+								</group>
+
+								<group id="simon" url="simon">
+									<asset id="worldSimon" size="171884" url="world.swf"/>
+								</group>
+
+								<group id="dodge" url="dodge">
+									<asset id="worldDodge" size="171884" url="world.swf"/>
+								</group>
+
+								<group id="catcher" url="catcher">
+									<asset id="worldCatcher" size="171884" url="world.swf"/>
+								</group>
+
+								<group id="paint" url="paint">
+									<asset id="worldPaint" size="227513" url="world.swf"/>
+									<asset id="avatars" size="53454" url="avatars.swf"/>
+									<asset id="paintMusic" size="317580" url="paintMusic.swf"/>
+									<asset id="paintSFXs" size="32553" url="paintSFXs.swf"/>
+								</group>
+							</group>
+						</group>
+					</group>
+				</group>
+			</group>
+		</group>
+	</assets>
+</configuration>

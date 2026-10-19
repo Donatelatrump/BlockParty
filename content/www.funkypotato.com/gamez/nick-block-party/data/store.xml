@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+	<item id="1" type="double" nameId="double" descId="double" imageId="double" coins="10" />
+	<item id="2" type="triple" nameId="triple" descId="triple" imageId="triple" coins="15" />
+	<item id="3" type="thief" nameId="thief" descId="thief" imageId="thief" coins="2" />
+	<item id="4" type="random" nameId="random" descId="random" imageId="random" coins="3" />
+	<item id="5" type="freeze" nameId="freeze" descId="freeze" imageId="freeze" coins="2" />
+	<item id="6" type="block" nameId="block" descId="block" imageId="block" coins="2" />
+	<!--<item id="7" type="googles" nameId="googles" descId="googles" imageId="googles" coins="2" />-->
+	<!--<item id="8" type="invi" nameId="invi" descId="invi" imageId="invi" coins="2" />-->
+</store>

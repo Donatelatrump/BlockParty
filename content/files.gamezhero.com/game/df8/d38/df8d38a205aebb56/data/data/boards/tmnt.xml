@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>april</host>
+
+	<overview>
+		<zoom>.35</zoom>
+		<position>2000, 2000</position>
+	</overview>
+
+	<miniMap>boards.tmntBoardMap</miniMap>
+
+	<tiles>    
+		<reds>0, 11, 16 ,17, 23, 29, 31</reds>
+		<blues>4, 7, 15, 22, 25, 34, 40</blues>
+		<shops>3, 10, 35, 39</shops>
+		<goodBad>14, 21, 36, 41</goodBad>
+		<trivias>2, 8, 13, 20, 26, 38</trivias>
+		<surprises>6, 9, 28, 32</surprises>
+		<challenges>5, 18, 27, 33, 37</challenges>
+		<extraRolls>1, 12, 19, 24, 30</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteTmnt</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="leo">9</tileGroup>
+		<tileGroup id="raph">32</tileGroup>
+		<tileGroup id="donnie">28</tileGroup>
+		<tileGroup id="splinter">6</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="splinter" mc="splinter" onLandedOnTile="givingCoin" onApplyEffect="afterGivingCoin"/>
+		<character id="donnie" mc="donnie" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="leo" mc="leo" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="raph" mc="raph" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+
+		<outcome tiles="leo" weight="20" messageId="leoMessage1" avatarId="leo" effect="-c" character="leo"/>
+		<outcome tiles="donnie" weight="20" messageId="donnieMessage1" avatarId="donnie" effect="-c" character="donnie"/>
+		<outcome tiles="raph" weight="20" messageId="raphMessage1" avatarId="raph" effect="-c" character="raph"/>
+
+		<outcome tiles="splinter" weight="20" messageId="splinterMessage1" avatarId="splinter" effect="+c" character="splinter"/>
+		<outcome tiles="splinter" weight="20" messageId="splinterMessage2" avatarId="splinter" effect="give" character="splinter"/>
+	</outcomes>
+
+</board>

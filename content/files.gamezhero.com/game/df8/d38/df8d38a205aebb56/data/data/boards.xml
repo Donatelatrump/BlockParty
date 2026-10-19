@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE boards[
+	<!ELEMENT boards (board+)>
+	<!ELEMENT board EMPTY>
+	<!ATTLIST board
+		id ID #REQUIRED
+		nameID NMTOKEN #IMPLIED
+		picture NMTOKEN #IMPLIED
+		comingSoon (true | false) #IMPLIED
+		comingSoonTextID NMTOKEN #IMPLIED>
+]>
+<boards>
+	<board id="tmnt"/>
+	<board id="samAndCat"/>
+	<board id="fanboy"/>
+	<board id="tuffPuppy"/>
+	<board id="iCarly"/>
+	<board id="victorious"/>
+	<board id="bob"/>
+	<board id="madagascar"/>
+	<board id="sheen"/>
+	<!--<board id="fop" comingSoon="true" comingSoonTextID="boards.comingSoon"/>
+	<board id="avatar" comingSoon="true" comingSoonTextID="boards.comingSoon"/>-->
+
+	<!--<board id="tuff" comingSoon="true" comingSoonTextID="boards.comingSoon"/>-->
+</boards>

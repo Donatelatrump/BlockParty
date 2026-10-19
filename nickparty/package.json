@@ -1,0 +1,41 @@
+{
+  "name": "nickparty",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Juego HTML5 multijugador y contra CPU (1-8 jugadores)",
+  "scripts": {
+    "dev": "concurrently -n ws,web -c magenta,cyan \"npm:dev:ws\" \"npm:dev:web\"",
+    "dev:ws": "tsx watch server/dev.ts",
+    "dev:web": "vite",
+    "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.scripts.json --noEmit",
+    "start:ws": "tsx server/dev.ts",
+    "check:api": "tsx scripts/check-api.ts",
+    "sim": "tsx scripts/simulate.ts",
+    "test:browser": "tsx scripts/browser-test.ts",
+    "debug:browser": "tsx scripts/debug-browser.ts",
+    "test": "tsc -p tsconfig.tests.json && node --test --experimental-test-isolation=none .test-build/scripts/*.test.js",
+    "build:server": "tsc -p tsconfig.tests.json",
+    "preview:game": "node .test-build/server/web.js",
+    "extract:paths": "python scripts/extract-board-paths.py"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@types/ws": "^8.5.12",
+    "@vitejs/plugin-react": "^4.3.2",
+    "concurrently": "^9.0.1",
+    "puppeteer-core": "^23.11.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}

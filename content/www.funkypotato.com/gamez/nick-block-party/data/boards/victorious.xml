@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>andre</host>
+
+	<overview>
+		<zoom>.36</zoom>
+		<position>1100, 4100</position>
+	</overview>
+
+	<miniMap>boards.victoriousBoardMap</miniMap>
+
+	<tiles>
+		<reds>0, 8, 11 ,17, 20, 25, 29, 41</reds>
+		<blues>2, 7, 15, 22, 27, 32, 40, 9, 34</blues>
+		<shops>10, 35, 39</shops>
+		<goodBad>14, 21, 26, 36</goodBad>
+		<trivias>4, 13, 23, 43</trivias>
+		<surprises>3, 12, 19, 31, 38, 42</surprises>
+		<challenges>5, 18, 28, 33, 37</challenges>
+		<extraRolls>1, 6, 16, 24, 30, 44</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteVictorious</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="beck">3 </tileGroup>
+		<tileGroup id="cat">42 </tileGroup>
+		<tileGroup id="trina">12</tileGroup>
+		<tileGroup id="robbie">19</tileGroup>
+		<tileGroup id="andre">38</tileGroup>
+		<tileGroup id="jade">31</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="beck" mc="beck" onLandedOnTile="talk"/>
+		<character id="cat" mc="cat" onLandedOnTile="upset"/>
+		<character id="catAdorable" mc="cat" onLandedOnTile="adorable"/>
+		<character id="trina" mc="trina" onLandedOnTile="acction" onApplyEffect="gotoIdle"/>
+		<character id="robbie" mc="robbie" onLandedOnTile="talk" onApplyEffect="gotoIdle"/>
+		<character id="andreGood" mc="andre" onLandedOnTile="good"/>
+		<character id="andreBad" mc="andre" onLandedOnTile="bad"/>
+		<character id="jade" mc="jade" onLandedOnTile="action"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+
+		<outcome tiles="trina" weight="20" messageId="trinaMessage1" avatarId="trina" effect="+c" character="trina"/>
+		<outcome tiles="trina" weight="20" messageId="trinaMessage2" avatarId="trina" effect="-c" character="trina"/>
+
+		<outcome tiles="jade" weight="20" messageId="jadeMessage1" avatarId="jade" effect="-c" character="jade"/>
+
+		<outcome tiles="andre" weight="20" messageId="andreMessage1" avatarId="andre" effect="+c" character="andreGood"/>
+		<outcome tiles="andre" weight="20" messageId="andreMessage2" avatarId="andre" effect="-c" character="andreBad"/>
+
+		<outcome tiles="cat" weight="20" messageId="catMessage1" avatarId="cat" effect="+c" character="catAdorable"/>
+		<outcome tiles="cat" weight="20" messageId="catMessage2" avatarId="cat" effect="-c" character="cat"/>
+
+		<outcome tiles="robbie" weight="20" messageId="robbieMessage1" avatarId="robbie" effect="+c" character="robbie"/>
+		<outcome tiles="robbie" weight="20" messageId="robbieMessage2" avatarId="robbie" effect="-c" character="robbie"/>
+
+		<outcome tiles="beck" weight="20" messageId="beckMessage1" avatarId="beck" effect="+c" character="beck"/>
+
+	</outcomes>
+
+</board>

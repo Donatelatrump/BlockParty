@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>kyle</host>
+
+	<overview>
+		<zoom>.35</zoom>
+		<position>2000, 2000</position>
+	</overview>
+
+	<miniMap>boards.fanboyBoardMap</miniMap>
+
+	<tiles>
+		<reds>0, 8, 11 ,17, 20, 29, 31</reds>
+		<blues>7, 15, 22, 27, 32, 40, 34</blues>
+		<shops>3, 10, 35, 39</shops>
+		<goodBad>14, 21, 26, 36, 41</goodBad>
+		<trivias>13, 38</trivias>
+		<surprises>2, 4, 9, 12, 16, 23, 25</surprises>
+		<challenges>5, 18, 28, 33, 37</challenges>
+		<extraRolls>1, 6, 19, 24, 30</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteFanboy</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="boog">2</tileGroup>
+		<tileGroup id="dollarnator">4</tileGroup>
+		<tileGroup id="kyle">12</tileGroup>
+		<tileGroup id="yo">23</tileGroup>
+		<tileGroup id="manartica">25</tileGroup>
+		<tileGroup id="poopatine">9</tileGroup>
+		<tileGroup id="oz">16</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="boog" mc="boog" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="dollarnator" mc="dollarnator" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="kyle" mc="kyle" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+		<character id="yo" mc="yo" onLandedOnTile="takingCoin"/>
+		<character id="manartica" mc="manartica" onLandedOnTile="givingCoin"/>
+		<character id="poopatine" mc="poopatine" onLandedOnTile="takingCoin"/>
+		<character id="oz" mc="oz" onLandedOnTile="takingCoin" onApplyEffect="afterTakingCoin"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+
+		<outcome tiles="boog" weight="20" messageId="boogMessage1" avatarId="boog" effect="-c" character="boog"/>
+
+		<outcome tiles="dollarnator" weight="20" messageId="dollarnatorMessage1" avatarId="dollarnator" effect="+c" character="dollarnator"/>
+
+		<outcome tiles="kyle" weight="20" messageId="kyleMessage1" avatarId="kyle" effect="-c" character="kyle"/>
+		<outcome tiles="kyle" weight="20" messageId="kyleMessage2" avatarId="kyle" effect="+c" character="kyle"/>
+
+		<outcome tiles="yo" weight="20" messageId="yoMessage1" avatarId="yo" effect="+c" character="yo"/>
+		<outcome tiles="yo" weight="20" messageId="yoMessage2" avatarId="yo" effect="-c" character="yo"/>
+
+		<outcome tiles="manartica" weight="20" messageId="manarticaMessage1" avatarId="manartica" effect="+c" character="manartica"/>
+
+		<outcome tiles="poopatine" weight="20" messageId="poopatineMessage1" avatarId="poopatine" effect="+c" character="poopatine"/>
+
+		<outcome tiles="oz" weight="20" messageId="ozMessage1" avatarId="oz" effect="-c" character="oz"/>
+		<outcome tiles="oz" weight="20" messageId="ozMessage1" avatarId="oz" effect="+c" character="oz"/>
+
+	</outcomes>
+
+</board>

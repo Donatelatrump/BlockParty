@@ -1,0 +1,336 @@
+tuffPuppyBoard.swf Movie Report
+--------------------------------
+
+Frame #    Frame Bytes    Total Bytes    Scene
+-------    -----------    -----------    ----------------
+      1        8956645        8956645    Scene 1 (AS 3.0 Classes Export Frame)
+
+Scene                        Shape Bytes    Text Bytes    ActionScript Bytes
+-------------------------    -----------    ----------    ------------------
+Scene 1                                0             0                     0
+
+Symbol                       Shape Bytes    Text Bytes    ActionScript Bytes
+-------------------------    -----------    ----------    ------------------
+nytz ray01                           957             0                     0
+fran ray01 copy                     1052             0                     0
+nutz_fx ray01                        102             0                     0
+fran_fx ray01 copy                   102             0                     0
+nutz01                                 0             0                     0
+Tween 1                                0             0                     0
+kes01                                  0             0                     0
+ball02                                 0             0                     0
+ball01                                 0             0                     0
+fly                                    0             0                     0
+boardOver                              0             0                     0
+path                                   0             0                     0
+sheenBoard                             0             0                     0
+boardBack                              0             0                     0
+tile                                 254             0                     0
+circle                               113             0                     0
+arrowMain                             94             0                     0
+arrow                                  0             0                     0
+coin                                   0             0                     0
+dorkus                                 0             0                     0
+verminioussnaptrap                     0             0                     0
+keswick                                0             0                     0
+chief                                  0             0                     0
+chameleon                              0             0                     0
+agentnutz                              0             0                     0
+francisco                              0             0                     0
+spots                                767             0                     0
+txt_rondaMC                            0           164                     0
+txt_ronda                             52             0                     0
+black                                 40             0                     0
+arrows copy                            0             0                     0
+map_anim                               0             0                     0
+map                                    0             0                     0
+sombra                                 0             0                     0
+chief idle                           170             0                     0
+chief idle02                          45             0                     0
+
+Font Name                 Bytes        Characters    
+----------------------    ---------    --------------
+Nougat                          701    
+
+ActionScript Bytes    Location
+------------------    --------
+              6838    ActionScript 3.0 Classes
+
+Bitmap                     Compressed    Compression
+-----------------------    ----------  --------  -----------
+tuffMinimap                     7253      744976   Lossless
+mapMiniArrow                     122         576   Lossless
+sombra.png                      1277       18360   JPEG Quality=80
+dorkus_0001.png                 4314       74088   JPEG Quality=80
+dorkus_0002.png                 4266       74088   JPEG Quality=80
+dorkus_0003.png                 4272       74088   JPEG Quality=80
+dorkus_0004.png                 4200       74088   JPEG Quality=80
+dorkus_0005.png                 4251       74088   JPEG Quality=80
+dorkus_0006.png                 4206       74088   JPEG Quality=80
+dorkus_0007.png                 4227       74088   JPEG Quality=80
+dorkus_0008.png                 4240       74088   JPEG Quality=80
+dorkus_0009.png                 4232       74088   JPEG Quality=80
+dorkus_0010.png                 4185       74088   JPEG Quality=80
+dorkus_0011.png                 4247       74088   JPEG Quality=80
+dorkus_0012.png                 4238       74088   JPEG Quality=80
+dorkus_0013.png                 4265       74088   JPEG Quality=80
+dorkus_0014.png                 4297       74088   JPEG Quality=80
+dorkus_0015.png                 4312       74088   JPEG Quality=80
+dorkus_0016.png                 4374       74088   JPEG Quality=80
+dorkus_0017.png                 4557       74088   JPEG Quality=80
+dorkus_0018.png                 4362       74088   JPEG Quality=80
+dorkus_0019.png                 4171       74088   JPEG Quality=80
+dorkus_0020.png                 4241       74088   JPEG Quality=80
+dorkus_0021.png                 4188       74088   JPEG Quality=80
+dorkus_0022.png                 4205       74088   JPEG Quality=80
+dorkus_0023.png                 4191       74088   JPEG Quality=80
+dorkus_0024.png                 4194       74088   JPEG Quality=80
+dorkus_0025.png                 4217       74088   JPEG Quality=80
+dorkus_0026.png                 4184       74088   JPEG Quality=80
+dorkus_0027.png                 4094       74088   JPEG Quality=80
+dorkus_0028.png                 3870       74088   JPEG Quality=80
+dorkus_0029.png                 3907       74088   JPEG Quality=80
+dorkus_0030.png                 4318       74088   JPEG Quality=80
+dorkus_0031.png                 4471       74088   JPEG Quality=80
+dorkus_0032.png                 4294       74088   JPEG Quality=80
+dorkus_0033.png                 4490       74088   JPEG Quality=80
+dorkus_0034.png                 4233       74088   JPEG Quality=80
+dorkus_0035.png                 4106       74088   JPEG Quality=80
+dorkus_0036.png                 4085       74088   JPEG Quality=80
+dorkus_0037.png                 4101       74088   JPEG Quality=80
+dorkus_0038.png                 4123       74088   JPEG Quality=80
+dorkus_0039.png                 4111       74088   JPEG Quality=80
+dorkus_0040.png                 4098       74088   JPEG Quality=80
+dorkus_0041.png                 4095       74088   JPEG Quality=80
+dorkus_0042.png                 4119       74088   JPEG Quality=80
+dorkus_0043.png                 4095       74088   JPEG Quality=80
+dorkus_0044.png                 4105       74088   JPEG Quality=80
+dorkus_0045.png                 4108       74088   JPEG Quality=80
+dorkus_0046.png                 4097       74088   JPEG Quality=80
+dorkus_0047.png                 4107       74088   JPEG Quality=80
+dorkus_0048.png                 4123       74088   JPEG Quality=80
+dorkus_0049.png                 4099       74088   JPEG Quality=80
+dorkus_0050.png                 4065       74088   JPEG Quality=80
+dorkus_0051.png                 4352       74088   JPEG Quality=80
+dorkus_0052.png                 4513       74088   JPEG Quality=80
+dorkus_0053.png                 4687       74088   JPEG Quality=80
+dorkus_0054.png                 4602       74088   JPEG Quality=80
+dorkus_0055.png                 4327       74088   JPEG Quality=80
+Board_Final                  6750102    39619860   Imported JPEG=102
+verminious__00000.png           7886      200000   JPEG Quality=80
+verminious__00001.png           7829      200000   JPEG Quality=80
+verminious__00002.png           7814      200000   JPEG Quality=80
+verminious__00003.png           7804      200000   JPEG Quality=80
+verminious__00004.png           7683      200000   JPEG Quality=80
+verminious__00005.png           7704      200000   JPEG Quality=80
+verminious__00006.png           7709      200000   JPEG Quality=80
+verminious__00007.png           7707      200000   JPEG Quality=80
+verminious__00008.png           7718      200000   JPEG Quality=80
+verminious__00009.png           7718      200000   JPEG Quality=80
+verminious__00010.png           7718      200000   JPEG Quality=80
+verminious__00011.png           7732      200000   JPEG Quality=80
+verminious__00012.png           7705      200000   JPEG Quality=80
+verminious__00013.png           7744      200000   JPEG Quality=80
+verminious__00014.png           7717      200000   JPEG Quality=80
+verminious__00015.png           7673      200000   JPEG Quality=80
+verminious__00016.png           7744      200000   JPEG Quality=80
+verminious__00017.png           7804      200000   JPEG Quality=80
+verminious__00018.png           7814      200000   JPEG Quality=80
+verminious__00019.png           7886      200000   JPEG Quality=80
+verminious__00020.png           7704      200000   JPEG Quality=80
+verminious__00021.png           8443      200000   JPEG Quality=80
+verminious__00022.png           8822      200000   JPEG Quality=80
+verminious__00023.png           9120      200000   JPEG Quality=80
+verminious__00024.png           9120      200000   JPEG Quality=80
+verminious__00025.png           9120      200000   JPEG Quality=80
+verminious__00026.png           9120      200000   JPEG Quality=80
+verminious__00027.png           8060      200000   JPEG Quality=80
+verminious__00028.png           8060      200000   JPEG Quality=80
+verminious__00029.png           7883      200000   JPEG Quality=80
+verminious_00032.png           10142      200000   JPEG Quality=80
+keswick_ 24.png                 5172       41800   JPEG Quality=80
+keswick_ 25.png                 4757       41800   JPEG Quality=80
+keswick_ 26.png                 4808       41800   JPEG Quality=80
+keswick_ 27.png                 4763       41800   JPEG Quality=80
+keswick_ 28.png                  893        2808   JPEG Quality=80
+keswick_ 29.png                 2165       11160   JPEG Quality=80
+chamaleon__00000.png           11606      124972   JPEG Quality=80
+chamaleon__00001.png           11652      125136   JPEG Quality=80
+chamaleon__00002.png           11684      125136   JPEG Quality=80
+chamaleon__00003.png           11653      125136   JPEG Quality=80
+chamaleon__00004.png           11698      125136   JPEG Quality=80
+chamaleon__00005.png           11757      125928   JPEG Quality=80
+chamaleon__00006.png           11843      125928   JPEG Quality=80
+chamaleon__00007.png           11912      126720   JPEG Quality=80
+chamaleon__00008.png           11901      126720   JPEG Quality=80
+chamaleon__00009.png           11893      126720   JPEG Quality=80
+chamaleon__00010.png           11752      126720   JPEG Quality=80
+chamaleon__00011.png           11722      126720   JPEG Quality=80
+chamaleon__00012.png           11798      126868   JPEG Quality=80
+chamaleon__00013.png           11884      128156   JPEG Quality=80
+chamaleon__00014.png           11878      128952   JPEG Quality=80
+chamaleon__00015.png           11946      129748   JPEG Quality=80
+chamaleon__00016.png           11825      128952   JPEG Quality=80
+chamaleon__00017.png           11989      128156   JPEG Quality=80
+chamaleon__00018.png           11923      128156   JPEG Quality=80
+chamaleon__00019.png           11871      128156   JPEG Quality=80
+chamaleon__00020.png           11749      126080   JPEG Quality=80
+chamaleon__00021.png           11674      126720   JPEG Quality=80
+chamaleon__00022.png           11711      126720   JPEG Quality=80
+chamaleon__00023.png           11900      126720   JPEG Quality=80
+chamaleon__00024.png           11894      125928   JPEG Quality=80
+chamaleon__00025.png           11915      125928   JPEG Quality=80
+chamaleon__00026.png           11818      125928   JPEG Quality=80
+chamaleon__00027.png           11678      124504   JPEG Quality=80
+chamaleon__00028.png           11648      125136   JPEG Quality=80
+chamaleon__00029.png           11728      125136   JPEG Quality=80
+chamaleon__00030.png           11624      125136   JPEG Quality=80
+chamaleon__00031.png           11606      124972   JPEG Quality=80
+chamaleon__00042.png           10579      120992   JPEG Quality=80
+chamaleon__00043.png            8513      162732   JPEG Quality=80
+chamaleon__00045.png            4824       76464   JPEG Quality=80
+chamaleon__00048.png            1262        9800   JPEG Quality=80
+chamaleon__00049.png             845        3640   JPEG Quality=80
+chamaleon__00051.png            1558        5928   JPEG Quality=80
+chamaleon__00052.png            1558        5928   JPEG Quality=80
+worn04.png                     37828      262144   JPEG Quality=80
+chief_body.png                  2801       16800   JPEG Quality=80
+chief.png                       5758       70800   JPEG Quality=80
+worn13.png                     37799      262144   JPEG Quality=80
+chief_face05.png                2758       28536   JPEG Quality=80
+chief_face03.png                2696       28536   JPEG Quality=80
+chief_face04.png                2843       28536   JPEG Quality=80
+chief_face02.png                2553       28536   JPEG Quality=80
+chief_face01.png                2656       28536   JPEG Quality=80
+nutz__00000.png                 6909      120000   JPEG Quality=80
+nutz__00001.png                 7012      120000   JPEG Quality=80
+nutz__00002.png                 7125      120000   JPEG Quality=80
+nutz__00003.png                 7141      120000   JPEG Quality=80
+nutz__00004.png                 7162      120000   JPEG Quality=80
+nutz__00005.png                 7182      120000   JPEG Quality=80
+nutz__00006.png                 7103      120000   JPEG Quality=80
+nutz__00007.png                 7197      120000   JPEG Quality=80
+nutz__00008.png                 7152      120000   JPEG Quality=80
+nutz__00009.png                 7161      120000   JPEG Quality=80
+nutz__00010.png                 7210      120000   JPEG Quality=80
+nutz__00011.png                 7165      120000   JPEG Quality=80
+nutz__00012.png                 7143      120000   JPEG Quality=80
+nutz__00013.png                 7078      120000   JPEG Quality=80
+nutz__00014.png                 7159      120000   JPEG Quality=80
+nutz__00015.png                 7141      120000   JPEG Quality=80
+nutz__00016.png                 7187      120000   JPEG Quality=80
+nutz__00017.png                 7212      120000   JPEG Quality=80
+nutz__00018.png                 7173      120000   JPEG Quality=80
+nutz__00019.png                 7230      120000   JPEG Quality=80
+nutz__00020.png                 7136      120000   JPEG Quality=80
+nutz__00021.png                 7085      120000   JPEG Quality=80
+nutz__00022.png                 7134      120000   JPEG Quality=80
+nutz__00023.png                 7116      120000   JPEG Quality=80
+nutz__00024.png                 7088      120000   JPEG Quality=80
+nutz__00025.png                 6992      120000   JPEG Quality=80
+nutz__00026.png                 6978      120000   JPEG Quality=80
+nutz__00027.png                 6951      120000   JPEG Quality=80
+nutz__00028.png                 6909      120000   JPEG Quality=80
+nutz__00029.png                 7107      120000   JPEG Quality=80
+nutz__00030.png                 7085      120000   JPEG Quality=80
+nutz__00031.png                 7193      120000   JPEG Quality=80
+nutz__00032.png                 7167      120000   JPEG Quality=80
+nutz__00033.png                 7103      120000   JPEG Quality=80
+nutz__00034.png                 7187      120000   JPEG Quality=80
+nutz__00035.png                 7161      120000   JPEG Quality=80
+nutz__00036.png                 7131      120000   JPEG Quality=80
+nutz__00037.png                 7143      120000   JPEG Quality=80
+nutz__00038.png                 7078      120000   JPEG Quality=80
+nutz__00039.png                 7159      120000   JPEG Quality=80
+nutz__00040.png                 7141      120000   JPEG Quality=80
+nutz__00041.png                 7187      120000   JPEG Quality=80
+nutz__00042.png                 7212      120000   JPEG Quality=80
+nutz__00043.png                 7173      120000   JPEG Quality=80
+nutz__00044.png                 7230      120000   JPEG Quality=80
+nutz__00045.png                 7136      120000   JPEG Quality=80
+nutz__00046.png                 7085      120000   JPEG Quality=80
+nutz__00047.png                 7134      120000   JPEG Quality=80
+nutz__00048.png                 7116      120000   JPEG Quality=80
+nutz__00049.png                 7088      120000   JPEG Quality=80
+nutz__00050.png                 6992      120000   JPEG Quality=80
+nutz__00051.png                 6978      120000   JPEG Quality=80
+nutz__00052.png                 6951      120000   JPEG Quality=80
+nutz__00053.png                 6909      120000   JPEG Quality=80
+nutz__00054.png                 6909      120000   JPEG Quality=80
+nutz__00055.png                 6909      120000   JPEG Quality=80
+nutz__00056.png                 6909      120000   JPEG Quality=80
+nutz__00057.png                 6909      120000   JPEG Quality=80
+nutz__00058.png                 6909      120000   JPEG Quality=80
+nutz__00059.png                 6909      120000   JPEG Quality=80
+nutz__00065.png                 8065      120000   JPEG Quality=80
+francis_00001.png              11179      250000   JPEG Quality=80
+francis_00003.png              11025      250000   JPEG Quality=80
+francis_00004.png              10981      250000   JPEG Quality=80
+francis_00005.png              10974      250000   JPEG Quality=80
+francis_00006.png              10952      250000   JPEG Quality=80
+francis_00007.png              10903      250000   JPEG Quality=80
+francis_00008.png              10889      250000   JPEG Quality=80
+francis_00009.png              10866      250000   JPEG Quality=80
+francis_00010.png              10859      250000   JPEG Quality=80
+francis_00011.png              10880      250000   JPEG Quality=80
+francis_00012.png              10914      250000   JPEG Quality=80
+francis_00013.png              10944      250000   JPEG Quality=80
+francis_00014.png              10972      250000   JPEG Quality=80
+francis_00015.png              10956      250000   JPEG Quality=80
+francis_00016.png              10913      250000   JPEG Quality=80
+francis_00017.png              10890      250000   JPEG Quality=80
+francis_00018.png              10830      250000   JPEG Quality=80
+francis_00019.png              10858      250000   JPEG Quality=80
+francis_00020.png              10919      250000   JPEG Quality=80
+francis_00021.png              10911      250000   JPEG Quality=80
+francis_00022.png              10943      250000   JPEG Quality=80
+francis_00023.png              10938      250000   JPEG Quality=80
+francis_00024.png              10981      250000   JPEG Quality=80
+francis_00025.png              10986      250000   JPEG Quality=80
+francis_00026.png              11031      250000   JPEG Quality=80
+francis_00027.png              11142      250000   JPEG Quality=80
+francis_00028.png              11178      250000   JPEG Quality=80
+francis_00029.png              11211      250000   JPEG Quality=80
+francisco_ 03.png              11469      480000   JPEG Quality=80
+francisco_ 02.png              11883      480000   JPEG Quality=80
+francisco_ 04.png              11469      480000   JPEG Quality=80
+francisco_ 05.png              12325      480000   JPEG Quality=80
+francisco_ 06.png              12325      480000   JPEG Quality=80
+francisco_ 07.png              11701      480000   JPEG Quality=80
+francisco_ 08.png              11701      480000   JPEG Quality=80
+francisco_ 09.png              10799      480000   JPEG Quality=80
+francisco_ 10.png              10799      480000   JPEG Quality=80
+francisco_ 11.png              11143      480000   JPEG Quality=80
+francisco_ 12.png              11143      480000   JPEG Quality=80
+francisco_ 13.png              11701      480000   JPEG Quality=80
+francisco_ 14.png              11701      480000   JPEG Quality=80
+blue_off.png                    6045       72912   JPEG Quality=80
+blue_on.png                     4693       75208   JPEG Quality=80
+red_off.png                     5865       72912   JPEG Quality=80
+red_on.png                      2965       55296   JPEG Quality=80
+shop_off.png                    7006       72912   JPEG Quality=80
+shop_on.png                     3295       37664   JPEG Quality=80
+green_off.png                   6767       72912   JPEG Quality=80
+green_on.png                    2979       37664   JPEG Quality=80
+skull_off.png                   6607       72912   JPEG Quality=80
+skull_on.png                    2154       37664   JPEG Quality=80
+exclamationmark_off.png         6423       72912   JPEG Quality=80
+exclamationmark_on.png          2850       37664   JPEG Quality=80
+dice_off.png                    6816       72912   JPEG Quality=80
+dice_on.png                     2809       37664   JPEG Quality=80
+questionmark_off.png            6743       72912   JPEG Quality=80
+questionmark_on.png             2950       37664   JPEG Quality=80
+energy_off.png                  6317       72912   JPEG Quality=80
+energy_on.png                   3112       37664   JPEG Quality=80
+01                               850       10404   Lossless
+05                              1590       10404   JPEG Quality=80
+03                              1648       10404   JPEG Quality=80
+04                              1614       10404   JPEG Quality=80
+02                              1580       10404   JPEG Quality=80
+Pico                           22265      706768   JPEG Quality=80
+Edificio                       10654      254004   JPEG Quality=80
+Elementos                     110796     5346936   JPEG Quality=80
+
+
+
+

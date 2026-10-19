@@ -1,0 +1,12 @@
+# Lo que no debe subirse a Vercel (el despliegue del juego original).
+# El prototipo multijugador es otro proyecto independiente.
+nickparty/
+blockparty/node_modules/
+blockparty/ruffle/*.map
+blockparty/*.zip
+blockparty/serve.mjs
+# La copia redundante de gamezhero (92 MB) y las capturas locales.
+content/files.gamezhero.com/
+nickparty/screenshots/
+nickparty/screenshots-ruffle/
+*.log

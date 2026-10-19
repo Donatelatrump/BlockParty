@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>chief</host>
+
+	<overview>
+		<zoom>.35</zoom>
+		<position>2000, 2000</position>
+	</overview>
+
+	<miniMap>boards.tuffPuppyBoardMap</miniMap>
+
+	<tiles>
+		<reds>0, 8, 11 ,18, 29</reds>
+		<blues>7, 16, 22, 30, 32, 4</blues>
+		<shops>3, 10, 25</shops>
+		<goodBad>14, 26, 31, 34</goodBad>
+		<trivias>2, 12, 20</trivias>
+		<surprises>5, 9, 13, 15, 21, 23</surprises>
+		<challenges>19, 28, 33</challenges>
+		<extraRolls>1, 6, 17, 24, 27</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteTuffPuppy</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="francisco">5</tileGroup>
+		<tileGroup id="agentnutz">9</tileGroup>
+		<tileGroup id="chief">13</tileGroup>
+		<tileGroup id="chameleon">15</tileGroup>
+		<tileGroup id="verminioussnaptrap">21</tileGroup>
+		<tileGroup id="keswick">23</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="francisco" mc="francisco" onLandedOnTile="takingCoin"/>
+		<character id="agentnutz" mc="agentnutz" onLandedOnTile="takingCoin"/>
+		<character id="chief" mc="chief" onLandedOnTile="action"/>
+		<character id="chameleon" mc="chameleon" onLandedOnTile="action"/>
+		<character id="verminioussnaptrap" mc="verminioussnaptrap" onLandedOnTile="takingCoin"/>
+		<character id="keswick" mc="keswick" onLandedOnTile="takingCoin"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+
+		<outcome tiles="francisco" weight="20" messageId="franciscoMessage1" avatarId="francisco" effect="-c" character="francisco"/>
+
+		<outcome tiles="agentnutz" weight="20" messageId="agentnutzMessage1" avatarId="agentnutz" effect="+c" character="agentnutz"/>
+
+		<outcome tiles="chief" weight="20" messageId="chiefMessage1" avatarId="chief" effect="+c" character="chief"/>
+		<outcome tiles="chief" weight="20" messageId="chiefMessage2" avatarId="chief" effect="-c" character="chief"/>
+
+		<outcome tiles="chameleon" weight="20" messageId="chameleonMessage1" avatarId="chameleon" effect="+c" character="chameleon"/>
+        <outcome tiles="chameleon" weight="20" messageId="chameleonMessage2" avatarId="chameleon" effect="-c" character="chameleon"/>
+
+		<outcome tiles="verminioussnaptrap" weight="20" messageId="verminioussnaptrapMessage1" avatarId="verminioussnaptrap" effect="-c" character="verminioussnaptrap"/>
+
+		<outcome tiles="keswick" weight="20" messageId="keswickMessage1" avatarId="keswick" effect="+c" character="keswick"/>
+	</outcomes>
+
+</board>

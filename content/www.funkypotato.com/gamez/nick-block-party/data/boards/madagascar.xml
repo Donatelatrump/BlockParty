@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>julien</host>
+
+	<overview>
+		<zoom>.36</zoom>
+		<position>1100, 4100</position>
+	</overview>
+
+	<miniMap>boards.madagascarBoardMap</miniMap>
+
+	<tiles>
+		<reds>8, 11, 17, 20, 35, 39</reds>
+		<blues>0, 2, 7, 12, 15, 22, 27, 32, 40</blues>
+		<shops>10, 31, 38</shops>
+		<goodBad>14, 21, 26, 36</goodBad>
+		<trivias>4, 13, 23, 43</trivias>
+		<surprises>3, 9, 19, 29, 25, 34, 41</surprises>
+		<challenges>5, 18, 28, 33, 37, 42</challenges>
+		<extraRolls>1, 6, 16, 24, 30, 44</extraRolls>
+	</tiles>
+
+	<challenges>cardMonteMadagascar</challenges>
+
+	<fxs>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="ferryWheel">9</tileGroup>
+		<tileGroup id="trampoline">25</tileGroup>
+		<tileGroup id="volcano">19</tileGroup>
+		<tileGroup id="buildings">41</tileGroup>
+		<tileGroup id="julien">29</tileGroup>
+		<tileGroup id="private">34</tileGroup>
+		<tileGroup id="penguinhq">3</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="privatee" mc="privatee" onLandedOnTile="whistle"/>
+		<character id="rico" mc="rico" onLandedOnTile="jump"/>
+		<character id="julien" mc="julien" onLandedOnTile="dance"/>
+		<character id="blowhole" mc="blowhole" onLandedOnTile="tail"/>
+		<character id="kowalski" mc="kowalski" onLandedOnTile="salute"/>
+		<character id="mort1" mc="mort" onLandedOnTile="happy"/>
+		<character id="mort2" mc="mort" onLandedOnTile="sad"/>
+		<character id="penguinhq" mc="penguinhq" onLandedOnTile="goUp" onApplyEffect="goDown" onLandedOnTileFx="board/hqshow" onApplyEffectFx="board/hqhide"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!-- "pc" starts the patrick challenge -->
+		<!-- "cm" starts the card monte -->
+		<!-- "give" gives the player a random powerup -->
+		<outcome tiles="ferryWheel" weight="20" messageId="blowholeMessage1" avatarId="blowhole" effect="-c" character="blowhole"/>
+		<outcome tiles="ferryWheel" weight="20" messageId="blowholeMessage2" avatarId="blowhole" effect="+c" character="blowhole"/>
+		<outcome tiles="ferryWheel" weight="20" messageId="blowholeMessage3" avatarId="blowhole" effect="er" character="blowhole"/>
+		<outcome tiles="ferryWheel" weight="20" messageId="blowholeMessage4" avatarId="blowhole" effect="mgc" character="blowhole"/>
+		<outcome tiles="ferryWheel" weight="5" messageId="blowholeMessage5" avatarId="blowhole" effect="+gc" character="blowhole"/>
+		<outcome tiles="ferryWheel" weight="10" messageId="blowholeMessage6" avatarId="blowhole" effect="-gc" character="blowhole"/>
+		<outcome tiles="ferryWheel" weight="20" messageId="blowholeMessage7" avatarId="blowhole" effect="cm" character="blowhole"/>
+		<!--<outcome tiles="ferryWheel" weight="20" messageId="blowholeMessage8" avatarId="blowhole" effect="give" character="blowhole"/>-->
+
+		<outcome tiles="private" weight="20" messageId="privateMessage1" avatarId="private" effect="-c" character="privatee"/>
+		<outcome tiles="private" weight="20" messageId="privateMessage2" avatarId="private" effect="+c" character="privatee"/>
+		<outcome tiles="private" weight="20" messageId="privateMessage3" avatarId="private" effect="er" character="privatee"/>
+		<outcome tiles="private" weight="20" messageId="privateMessage4" avatarId="private" effect="mgc" character="privatee"/>
+		<outcome tiles="private" weight="5" messageId="privateMessage5" avatarId="private" effect="+gc" character="privatee"/>
+		<outcome tiles="private" weight="10" messageId="privateMessage6" avatarId="private" effect="-gc" character="privatee"/>
+		<outcome tiles="private" weight="20" messageId="privateMessage7" avatarId="private" effect="cm" character="privatee"/>
+		<!--<outcome tiles="private" weight="20" messageId="privateMessage8" avatarId="privatee" effect="give" character="privatee"/>-->
+
+		<outcome tiles="trampoline" weight="10" messageId="mortMessage1" avatarId="mort" effect="-c" character="mort1"/>
+		<outcome tiles="trampoline" weight="10" messageId="mortMessage2" avatarId="mort" effect="+c" character="mort1"/>
+		<outcome tiles="trampoline" weight="10" messageId="mortMessage3" avatarId="mort" effect="er" character="mort1"/>
+		<outcome tiles="trampoline" weight="10" messageId="mortMessage4" avatarId="mort" effect="mgc" character="mort1"/>
+		<outcome tiles="trampoline" weight="5" messageId="mortMessage5" avatarId="mort" effect="+gc" character="mort1"/>
+		<outcome tiles="trampoline" weight="5" messageId="mortMessage6" avatarId="mort" effect="-gc" character="mort1"/>
+		<outcome tiles="trampoline" weight="10" messageId="mortMessage7" avatarId="mort" effect="cm" character="mort1"/>
+		<!--<outcome tiles="trampoline" weight="10" messageId="mortMessage8" avatarId="mort" effect="give" character="mort1"/>-->
+
+		<outcome tiles="julien" weight="10" messageId="julienMessage1" avatarId="julien" effect="-c" character="julien"/>
+		<outcome tiles="julien" weight="10" messageId="julienMessage2" avatarId="julien" effect="+c" character="julien"/>
+		<outcome tiles="julien" weight="10" messageId="julienMessage3" avatarId="julien" effect="er" character="julien"/>
+		<outcome tiles="julien" weight="10" messageId="julienMessage4" avatarId="julien" effect="mgc" character="julien"/>
+		<outcome tiles="julien" weight="5" messageId="julienMessage5" avatarId="julien" effect="+gc" character="julien"/>
+		<outcome tiles="julien" weight="5" messageId="julienMessage6" avatarId="julien" effect="-gc" character="julien"/>
+		<outcome tiles="julien" weight="10" messageId="julienMessage7" avatarId="julien" effect="cm" character="julien"/>
+		<!--<outcome tiles="julien" weight="10" messageId="julienMessage8" avatarId="julien" effect="give" character="julien"/>-->
+
+		<outcome tiles="volcano" weight="10" messageId="kowalskiMessage1" avatarId="kowalski" effect="-c" character="kowalski"/>
+		<outcome tiles="volcano" weight="10" messageId="kowalskiMessage2" avatarId="kowalski" effect="+c" character="kowalski"/>
+		<outcome tiles="volcano" weight="10" messageId="kowalskiMessage3" avatarId="kowalski" effect="er" character="kowalski"/>
+		<outcome tiles="volcano" weight="10" messageId="kowalskiMessage4" avatarId="kowalski" effect="mgc" character="kowalski"/>
+		<outcome tiles="volcano" weight="5" messageId="kowalskiMessage5" avatarId="kowalski" effect="+gc" character="kowalski"/>
+		<outcome tiles="volcano" weight="5" messageId="kowalskiMessage6" avatarId="kowalski" effect="-gc" character="kowalski"/>
+		<outcome tiles="volcano" weight="10" messageId="kowalskiMessage7" avatarId="kowalski" effect="cm" character="kowalski"/>
+		<!--<outcome tiles="volcano" weight="10" messageId="kowalskiMessage8" avatarId="kowalski" effect="give" character="kowalski"/>-->
+
+		<outcome tiles="buildings" weight="10" messageId="ricoMessage1" avatarId="rico" effect="-c" character="rico"/>
+		<outcome tiles="buildings" weight="10" messageId="ricoMessage2" avatarId="rico" effect="+c" character="rico"/>
+		<outcome tiles="buildings" weight="10" messageId="ricoMessage3" avatarId="rico" effect="er" character="rico"/>
+		<outcome tiles="buildings" weight="10" messageId="ricoMessage4" avatarId="rico" effect="mgc" character="rico"/>
+		<outcome tiles="buildings" weight="5" messageId="ricoMessage5" avatarId="rico" effect="+gc" character="rico"/>
+		<outcome tiles="buildings" weight="5" messageId="ricoMessage6" avatarId="rico" effect="-gc" character="rico"/>
+		<outcome tiles="buildings" weight="10" messageId="ricoMessage7" avatarId="rico" effect="cm" character="rico"/>
+		<!--<outcome tiles="buildings" weight="10" messageId="ricoMessage8" avatarId="rico" effect="give" character="rico"/>-->
+
+		<outcome tiles="penguinhq" weight="20" messageId="penguinhqMessage1" avatarId="penguinhq" effect="-c" character="penguinhq"/>
+		<outcome tiles="penguinhq" weight="20" messageId="penguinhqMessage2" avatarId="penguinhq" effect="+c" character="penguinhq"/>
+		<outcome tiles="penguinhq" weight="20" messageId="penguinhqMessage3" avatarId="penguinhq" effect="er" character="penguinhq"/>
+		<outcome tiles="penguinhq" weight="20" messageId="penguinhqMessage4" avatarId="penguinhq" effect="mgc" character="penguinhq"/>
+		<outcome tiles="penguinhq" weight="5" messageId="penguinhqMessage5" avatarId="penguinhq" effect="+gc" character="penguinhq"/>
+		<outcome tiles="penguinhq" weight="10" messageId="penguinhqMessage6" avatarId="penguinhq" effect="-gc" character="penguinhq"/>
+		<outcome tiles="penguinhq" weight="20" messageId="penguinhqMessage7" avatarId="penguinhq" effect="cm" character="penguinhq"/>
+		<!--<outcome tiles="penguinhq" weight="20" messageId="penguinhqMessage8" avatarId="penguinhq" effect="cm" character="penguinhq"/>-->
+	</outcomes>
+
+</board>

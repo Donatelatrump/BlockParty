@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board>
+
+	<host>plankton</host>
+
+	<overview>
+		<zoom>.26</zoom>
+		<position>1600, 1600</position>
+	</overview>
+
+	<miniMap>boards.spongeBobBoardMap</miniMap>
+
+	<tiles>
+		<reds>2, 17, 25, 39</reds>
+		<blues>0, 7, 32, 33</blues>
+		<shops>20, 23, 30, 37</shops>
+		<goodBad>14, 19, 26, 34, 42</goodBad>
+		<trivias>3, 5, 13, 28</trivias>
+		<surprises>4, 9, 10, 27, 11, 15, 18, 21, 29, 36, 38, 41, 43</surprises>
+		<challenges>8, 12, 22, 35, 40</challenges>
+		<extraRolls>1, 6, 16, 24, 31, 44</extraRolls>
+	</tiles>
+
+	<challenges>patrick</challenges>
+
+	<fxs>
+		<fx id="bubbles" linkage="boards.spongeBob.bubbles" frequency="5-10" position="0-1, 0.6-1.5" duration="animation"/>
+		<fx id="jellyFish" linkage="boards.spongeBob.jellyfish" frequency="10-20" position="0-1, 1.3-1.5" speed="-3, -5"/>
+	</fxs>
+
+	<tileGroups>
+		<tileGroup id="moai">9</tileGroup>
+		<tileGroup id="puff">38</tileGroup>
+		<tileGroup id="pearl">18</tileGroup>
+		<tileGroup id="larry">21</tileGroup>
+		<tileGroup id="pineapple">10</tileGroup>
+		<tileGroup id="krustyKrab">4</tileGroup>
+		<tileGroup id="pirateShip">27</tileGroup>
+		<tileGroup id="sandyHouse">41</tileGroup>
+		<tileGroup id="chumChumBucket">11</tileGroup>
+		<tileGroup id="mermaidAndBarnacle">43</tileGroup>
+
+		<tileGroup id="patrickSpawns">15, 29, 36</tileGroup>
+		<tileGroup id="dutchSpawns">15, 29, 36</tileGroup>
+		<tileGroup id="planktonSpawns">15, 29, 36</tileGroup>
+	</tileGroups>
+
+	<characters>
+		<character id="sandy1" mc="sandy" onApplyEffect="punch"/>
+		<character id="sandy2" mc="sandy" onApplyEffect="waving"/>
+		<character id="krabs1" mc="krabs" onApplyEffect="askCoin"/>
+		<character id="krabs2" mc="krabs" onApplyEffect="giveCoin"/>
+		<character id="gary" onLandedOnTile="in" onApplyEffect="out"/>
+		<character id="pearl" onLandedOnTile="in" onApplyEffect="out"/>
+		<character id="karen" onLandedOnTile="in" onApplyEffect="out"/>
+		<character id="larry" onLandedOnTile="exercise" onApplyEffect="idle"/>
+		<character id="squidward1" mc="squidward" onLandedOnTile="angry" onApplyEffect="idle"/>
+		<character id="squidward2" mc="squidward" onLandedOnTile="flute" onApplyEffect="idle"/>
+
+		<!-- if "spawnAt" is defined, the MC is the linkage of the movieclip -->
+		<character id="patrick1" mc="boards.spongeBobBoard.patrick" spawnAt="0, -180" onLandedOnTile="in" onApplyEffect="steal"/>
+		<character id="patrick2" mc="boards.spongeBobBoard.patrick" spawnAt="0, -180" onLandedOnTile="in" onApplyEffect="give"/>
+		<character id="dutchMan" mc="boards.spongeBobBoard.flyingDutchman" spawnAt="-120, -50" onLandedOnTile="in" onApplyEffect="out"/>
+	</characters>
+
+	<outcomes>
+		<!-- EFFECTS: -->
+		<!-- "+{n}c" gives n coins -->
+		<!-- "-{n}c" steals n coins -->
+		<!-- "+c" gives random coins -->
+		<!-- "-c" steals random coins -->
+		<!-- "er" gives an extra roll -->
+		<!-- "mgc" moves the gold coin -->
+		<!-- "+gc" gives one gold coin -->
+		<!-- "-gc" steals one gold coin -->
+		<!--outcome tiles="krustyKrab" weight="20" messageId="krabMessage1"  avatarId="krab" effect="pc" character="krabs1"/-->
+		<outcome tiles="krustyKrab" weight="20" messageId="krabMessage1" avatarId="krab" effect="-c" character="krabs1"/>
+		<outcome tiles="krustyKrab" weight="20" messageId="krabMessage2" avatarId="krab" effect="+c" character="krabs2"/>
+		<outcome tiles="krustyKrab" weight="20" messageId="krabMessage3" avatarId="krab" effect="-c" character="krabs2"/>
+		<outcome tiles="krustyKrab" weight="20" messageId="krabMessage4" avatarId="krab" effect="er"/>
+
+		<outcome tiles="moai" weight="20" messageId="squidwardMessage1" avatarId="squidward" effect="-c" character="squidward1"/>
+		<outcome tiles="moai" weight="20" messageId="squidwardMessage2" avatarId="squidward" effect="+c" character="squidward2"/>
+
+		<outcome tiles="chumChumBucket" weight="20" messageId="karenMessage1" avatarId="karen" effect="-c" character="karen"/>
+		<outcome tiles="chumChumBucket" weight="20" messageId="karenMessage2" avatarId="karen" effect="+c" character="karen"/>
+
+		<outcome tiles="sandyHouse" weight="20" messageId="sandyMessage1" avatarId="sandy" effect="-c" character="sandy1"/>
+		<outcome tiles="sandyHouse" weight="20" messageId="sandyMessage2" avatarId="sandy" effect="+c" character="sandy2"/>
+
+		<outcome tiles="mermaidAndBarnacle" weight="10" messageId="mermaidManMessage1" avatarId="mermaidMan" effect="-c"/>
+		<outcome tiles="mermaidAndBarnacle" weight="10" messageId="mermaidManMessage2" avatarId="mermaidMan" effect="+c"/>
+		<outcome tiles="mermaidAndBarnacle" weight="10" messageId="barnacleBoyMessage1" avatarId="mermaidMan" effect="-c"/>
+		<outcome tiles="mermaidAndBarnacle" weight="10" messageId="barnacleBoyMessage2" avatarId="mermaidMan" effect="+c"/>
+
+		<outcome tiles="puff" weight="10" messageId="puffMessage1" avatarId="puff" effect="-c"/>
+		<outcome tiles="puff" weight="10" messageId="puffMessage2" avatarId="puff" effect="+c"/>
+
+		<outcome tiles="pineapple" weight="10" messageId="garyMessage1" avatarId="gary" effect="-c" character="gary"/>
+		<outcome tiles="pineapple" weight="10" messageId="garyMessage2" avatarId="gary" effect="+c" character="gary"/>
+
+		<outcome tiles="pearl" weight="10" messageId="pearlMessage1" avatarId="pearl" effect="-c" character="pearl"/>
+		<outcome tiles="pearl" weight="10" messageId="pearlMessage2" avatarId="pearl" effect="+c" character="pearl"/>
+
+		<outcome tiles="larry" weight="10" messageId="larryMessage1" avatarId="larry" effect="-c" character="larry"/>
+		<outcome tiles="larry" weight="10" messageId="larryMessage2" avatarId="larry" effect="+c" character="larry"/>
+
+		<outcome tiles="pirateShip, dutchSpawns" weight="40" messageId="dutchmanMessage1" avatarId="dutchman" effect="-c" character="dutchMan"/>
+		<outcome tiles="pirateShip, dutchSpawns" weight="20" messageId="dutchmanMessage2" avatarId="dutchman" effect="mgc" character="dutchMan"/>
+
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage1" avatarId="plankton" effect="-c"/>
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage2" avatarId="plankton" effect="+c"/>
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage3" avatarId="plankton" effect="mgc"/>
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage4" avatarId="plankton" effect="er"/>
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage5" avatarId="plankton" effect="-c"/>
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage6" avatarId="plankton" effect="-gc"/>
+		<outcome tiles="planktonSpawns" weight="40" messageId="planktonMessage7" avatarId="plankton" effect="mgc"/>
+
+		<outcome tiles="patrickSpawns" weight="40" messageId="patrickMessage1" avatarId="patrick" effect="-c" character="patrick1"/>
+		<outcome tiles="patrickSpawns" weight="40" messageId="patrickMessage2" avatarId="patrick" effect="+c" character="patrick2"/>
+		<outcome tiles="patrickSpawns" weight="40" messageId="patrickMessage3" avatarId="patrick" effect="+c" character="patrick2"/>
+		<outcome tiles="patrickSpawns" weight="40" messageId="patrickMessage4" avatarId="patrick" effect="+c" character="patrick2"/>
+	</outcomes>
+
+</board>

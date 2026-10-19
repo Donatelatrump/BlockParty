@@ -1,0 +1,9 @@
+node_modules
+dist
+screenshots
+.env
+.env.*
+*.log
+.test-build
+.browser-build
+.browser-profile

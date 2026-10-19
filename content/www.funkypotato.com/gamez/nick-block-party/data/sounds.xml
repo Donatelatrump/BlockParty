@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE soundGroup SYSTEM "http://games.mplocal.com/dtds/GameComponents/4.0.0/soundsDef.dtd"><soundGroup>
+	<soundGroup id="soundFXs">
+		<soundGroup id="menues" linkage="audio.menues.">
+			<sound id="buttonClick" linkage="buttonClick"/>
+			<sound id="buttonOver" linkage="buttonOver"/>
+			<sound id="slideIn" linkage="slideIn"/>
+			<sound id="slideOut" linkage="slideOut"/>
+			<sound id="goldcoinscreen" linkage="goldCoinScreen"/>
+		</soundGroup>
+
+		<soundGroup id="trivia" linkage="audio.fx.trivia.">
+			<sound id="right" linkage="right"/>
+			<sound id="wrong" linkage="wrong"/>
+		</soundGroup>
+
+		<soundGroup id="board" linkage="audio.fx.board.">
+			<sound id="diceRoll" linkage="diceRoll"/>
+			<sound id="diceStop" linkage="diceStop"/>
+			<sound id="messageIn" linkage="genericMessageIn"/>
+			<sound id="tileOver" linkage="tileOver"/>
+			<sound id="wheelStart" linkage="wheelStart"/>
+			<sound id="wheelTick" linkage="wheelTick"/>
+			<sound id="blackSpace" linkage="blackSpace"/>
+			<sound id="blueSpace" linkage="blueSpace"/>
+			<sound id="challenge" linkage="challenge"/>
+			<sound id="diceSpace" linkage="diceSpace"/>
+			<sound id="greenSpace" linkage="greenSpace"/>
+			<sound id="redSpace" linkage="redSpace"/>
+			<sound id="surpriseSpace" linkage="surpriseSpace"/>
+			<sound id="gotCoins" linkage="gotCoins"/>
+			<sound id="coinsShort" linkage="coinsShort"/>
+			<sound id="roulette" linkage="roulette"/>
+			<sound id="hqhide" linkage="hqhide"/>
+			<sound id="hqshow" linkage="hqshow"/>
+			<sound id="train" linkage="train"/>
+			<sound id="bounce" linkage="bounce"/>
+		</soundGroup>
+
+		<soundGroup id="patrick" linkage="com.mp.audio.fx.patrick.">
+			<sound id="snoreIn" linkage="character.snorein"/>
+			<sound id="snoreOut" linkage="character.snoreout"/>
+			<sound id="hit" linkage="character.hit"/>
+			<sound id="pay" linkage="character.pay"/>
+			<sound id="lookdown" linkage="character.lookDown"/>
+			<sound id="bounce" linkage="ball.bounce"/>
+		</soundGroup>
+
+		<soundGroup id="comments" linkage="audio.comments.">
+			<soundGroup id="bobMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+
+			<soundGroup id="sheenMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+
+			<soundGroup id="madagascarMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+			<soundGroup id="victoriousMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+			<soundGroup id="fanboyMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+			<soundGroup id="tuffPuppyMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+			<soundGroup id="tmntMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+			<soundGroup id="samAndCatMusic" linkage="bob.">
+				<sound id="congratulations" linkage="comment2_2"/>
+			</soundGroup>
+			
+		</soundGroup>
+
+		<soundGroup id="minigames">
+			<sound id="timeWarning" linkage="minigames.audio.fx.timeWarning"/>
+			<sound id="bobJump" linkage="minigames.audio.fx.bobJump"/>
+			<sound id="chumchumJump" linkage="minigames.audio.fx.bobJump"/>
+			<sound id="kittyJump" linkage="minigames.audio.fx.carlyJump"/>
+			<sound id="fanboyJump" linkage="minigames.audio.fx.fanboyJump"/>
+			<sound id="tuffJump" linkage="minigames.audio.fx.puppieJump"/>
+			<sound id="sheenJump" linkage="minigames.audio.fx.sheenJump"/>
+			<sound id="skipperJump" linkage="minigames.audio.fx.skipperJump"/>
+			<sound id="toriJump" linkage="minigames.audio.fx.toriJump"/>
+			<sound id="carlyJump" linkage="minigames.audio.fx.carlyJump"/>
+			<sound id="mikeyJump" linkage="minigames.audio.fx.carlyJump"/>
+			<sound id="samJump" linkage="minigames.audio.fx.carlyJump"/>
+			<sound id="catJump" linkage="minigames.audio.fx.carlyJump"/>
+			<sound id="characterHit" linkage="minigames.audio.fx.characterHit"/>
+			<sound id="skipperwhistle" linkage="minigames.audio.fx.skipperwhistle"/>
+
+			<soundGroup id="lick" selectionType="xrandom">
+				<sound id="licking1" linkage="minigames.audio.fx.licking1"/>
+				<sound id="licking2" linkage="minigames.audio.fx.licking2"/>
+				<sound id="licking3" linkage="minigames.audio.fx.licking3"/>
+				<sound id="licking4" linkage="minigames.audio.fx.licking4"/>
+				<sound id="licking5" linkage="minigames.audio.fx.licking5"/>
+				<sound id="licking6" linkage="minigames.audio.fx.licking6"/>
+			</soundGroup>
+
+			<soundGroup id="escape" linkage="escape.audio.fx.">
+				<sound id="tongue" linkage="tongue"/>
+			</soundGroup>
+
+			<soundGroup id="lockers" linkage="lockers.audio.fx.">
+				<sound id="close" linkage="close"/>
+			</soundGroup>
+
+			<soundGroup id="bouncybed" linkage="bouncybed.audio.fx.">
+				<sound id="bell" linkage="bell"/>
+				<sound id="badjump" linkage="badjump"/>
+				<sound id="goodjump" linkage="goodjump"/>
+				<sound id="bestjump" linkage="bestjump"/>
+			</soundGroup>
+
+			<soundGroup id="escapeyo" linkage="escapeyo.audio.fx.">
+				<sound id="characterout" linkage="character_out"/>
+				<soundGroup id="jump" selectionType="xrandom" playMode="once">
+					<sound linkage="jump" />
+					<sound linkage="jump02" />
+				</soundGroup>
+				<soundGroup id="yohit" selectionType="xrandom" playMode="once">
+					<sound linkage="yo_hit01" />
+					<sound linkage="yo_hit02" />
+					<sound linkage="yo_hit03" />
+				</soundGroup>
+			</soundGroup>
+			
+			<soundGroup id="king_of_the_heap" linkage="king_of_the_heap.audio.fx.">
+				<sound id="characterout" linkage="character_out"/>
+				<soundGroup id="jump" selectionType="xrandom" playMode="once">
+					<sound linkage="jump" />
+					<sound linkage="jump02" />
+				</soundGroup>
+				<soundGroup id="yohit" selectionType="xrandom" playMode="once">
+					<sound linkage="yo_hit01" />
+					<sound linkage="yo_hit02" />
+					<sound linkage="yo_hit03" />
+				</soundGroup>
+			</soundGroup>
+			
+			<soundGroup id="pizza_pursuit" linkage="pizza_pursuit.audio.fx.">
+				<sound id="characterout" linkage="character_out"/>
+				<soundGroup id="jump" selectionType="xrandom" playMode="once">
+					<sound linkage="jump" />
+					<sound linkage="jump02" />
+				</soundGroup>
+				<soundGroup id="yohit" selectionType="xrandom" playMode="once">
+					<sound linkage="yo_hit01" />
+					<sound linkage="yo_hit02" />
+					<sound linkage="yo_hit03" />
+				</soundGroup>
+			</soundGroup>
+			
+			<soundGroup id="apartment_maze" linkage="apartment_maze.audio.fx.">
+				<sound id="characterout" linkage="character_out"/>
+				<soundGroup id="jump" selectionType="xrandom" playMode="once">
+					<sound linkage="jump" />
+					<sound linkage="jump02" />
+				</soundGroup>
+				<soundGroup id="yohit" selectionType="xrandom" playMode="once">
+					<sound linkage="yo_hit01" />
+					<sound linkage="yo_hit02" />
+					<sound linkage="yo_hit03" />
+				</soundGroup>
+			</soundGroup>
+			
+			<soundGroup id="demanding_goat" linkage="demanding_goat.audio.fx.">
+				<sound id="characterout" linkage="character_out"/>
+				<soundGroup id="jump" selectionType="xrandom" playMode="once">
+					<sound linkage="jump" />
+					<sound linkage="jump02" />
+				</soundGroup>
+				<soundGroup id="yohit" selectionType="xrandom" playMode="once">
+					<sound linkage="yo_hit01" />
+					<sound linkage="yo_hit02" />
+					<sound linkage="yo_hit03" />
+				</soundGroup>
+			</soundGroup>
+
+			<soundGroup id="simon" linkage="audio.fx.simon.">
+				<sound id="color1" linkage="color1"/>
+				<sound id="color2" linkage="color2"/>
+				<sound id="color3" linkage="color3"/>
+				<sound id="color4" linkage="color4"/>
+				<sound id="over" linkage="over"/>
+				<sound id="wrong" linkage="wrong"/>
+			</soundGroup>
+
+			<soundGroup id="falling" linkage="falling.sound.">
+				<sound id="glass" linkage="glass"/>
+				<sound id="rumble" linkage="rumble"/>
+			</soundGroup>
+
+			<soundGroup id="dodge" linkage="dodge.audio.fx.">
+				<soundGroup id="bubble" selectionType="random">
+					<sound id="bubble1" linkage="bubble1"/>
+					<sound id="bubble2" linkage="bubble2"/>
+					<sound id="bubble3" linkage="bubble3"/>
+					<sound id="bubble4" linkage="bubble4"/>
+				</soundGroup>
+				<sound id="out" linkage="out"/>
+			</soundGroup>
+
+			<soundGroup id="fleas" linkage="fleas.audio.fx.">
+				<sound id="catch" linkage="catch"/>
+				<sound id="drop" linkage="drop"/>
+				<sound id="drop_bad" linkage="drop_bad"/>
+				<sound id="tweezers" linkage="tweezers"/>
+			</soundGroup>
+
+			<soundGroup id="teetering" linkage="teetering.audio.fx.">
+				<sound id="banana" linkage="banana"/>
+				<sound id="fall" linkage="fall"/>
+				<sound id="hit" linkage="hit"/>
+			</soundGroup>
+
+			<soundGroup id="jumper" linkage="">
+				<sound id="spatulaSwing" linkage="spatulaSwing"/>
+				<sound id="drop" linkage="drop"/>
+				<sound id="drop_bad" linkage="drop_bad"/>
+				<sound id="tweezers" linkage="tweezers"/>
+			</soundGroup>
+
+			<soundGroup id="paint" linkage="paint.audio.fx.">
+				<sound id="bounce" linkage="bounce"/>
+				<sound id="paint" linkage="paint"/>
+
+				<soundGroup id="laugh" selectionType="random">
+					<sound id="boog1" linkage="boog1"/>
+					<sound id="boog2" linkage="boog2"/>
+					<sound id="boog3" linkage="boog3"/>
+				</soundGroup>
+			</soundGroup>
+
+			<soundGroup id="hockey" linkage="hockey.audio.fx.">
+				<sound id="hit" linkage="hit"/>
+				<sound id="spawn" linkage="spawn"/>
+				<sound id="goal" linkage="goal"/>
+			</soundGroup>
+
+			<soundGroup id="catch" linkage="catcher.audio.fx.">
+				<soundGroup id="note" selectionType="random">
+					<sound id="note1" linkage="note1"/>
+					<sound id="note2" linkage="note2"/>
+					<sound id="note3" linkage="note3"/>
+					<sound id="note4" linkage="note4"/>
+				</soundGroup>
+			</soundGroup>
+
+		</soundGroup>
+	</soundGroup>
+
+	<soundGroup id="musics">
+		<sound id="mainMenu" linkage="audio.menues.main" fadeIn="true" fadeOut="true" loop="true"/>
+		<soundGroup id="boards" linkage="audio.music.boards.">
+			<soundGroup id="bob" linkage="bob." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="background2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back3" linkage="background3" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back4" linkage="background4" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="madagascar" linkage="madagascar." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="background2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back3" linkage="background3" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+			<soundGroup id="iCarly" linkage="iCarly." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="background2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+
+			</soundGroup>
+			<soundGroup id="victorious" linkage="victorious." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="background2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+			<soundGroup id="sheen" linkage="sheen." selectionType="random">
+				<sound id="back1" linkage="sheen1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="sheen2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+			<soundGroup id="fanboy" linkage="fanboy." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="background2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back3" linkage="background3" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back4" linkage="background4" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+			<soundGroup id="tuffPuppy" linkage="tuffPuppy." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+				<sound id="back2" linkage="background2" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+			<soundGroup id="tmnt" linkage="tmnt." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+			<soundGroup id="samAndCat" linkage="samAndCat." selectionType="random">
+				<sound id="back1" linkage="background1" fadeIn="true" fadeOut="true" fadeDuration="1" loop="true"/>
+			</soundGroup>
+
+		</soundGroup>
+
+		<soundGroup id="minigames">
+			<soundGroup id="simon" linkage="minigames.simon.world.">
+				<sound id="theme" linkage="music" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="escape" linkage="escape.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="lockers" linkage="lockers.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="bouncybed" linkage="bouncybed.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="escapeyo" linkage="escapeyo.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+			
+			<soundGroup id="king_of_the_heap" linkage="king_of_the_heap.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+			
+			<soundGroup id="pizza_pursuit" linkage="pizza_pursuit.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+			
+			<soundGroup id="apartment_maze" linkage="apartment_maze.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+			
+			<soundGroup id="demanding_goat" linkage="demanding_goat.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="fleas" linkage="fleas.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="paint" linkage="paint.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="jumper" linkage="jumper.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+			<soundGroup id="falling" linkage="falling.music.">
+				<sound id="main" linkage="main" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="teetering" linkage="teetering.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="catcher" linkage="catcher.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="hockey" linkage="hockey.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+
+			<soundGroup id="dodge" linkage="dodge.audio.music.">
+				<sound id="theme" linkage="theme" loop="true"/>
+			</soundGroup>
+		</soundGroup>
+	</soundGroup>
+</soundGroup>

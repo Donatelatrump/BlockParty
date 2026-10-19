@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coins genericCoinFrequency="65">
+
+	<!-- frequency should be an integer greater than 0 -->
+
+	<coin id="bob" rare="true" frequency="50" boards="bob"/>
+	<coin id="gary" rare="true" frequency="20" boards="bob"/>
+	<coin id="krabs" rare="true" frequency="30" boards="bob"/>
+
+	<coin id="skipper" rare="true" frequency="40" boards="madagascar"/>
+	<coin id="mort" rare="true" frequency="30" boards="madagascar"/>
+	<coin id="julien" rare="true" frequency="20" boards="madagascar"/>
+
+	<coin id="sheen" rare="true" frequency="20" boards="sheen"/>
+	<coin id="dorkus" rare="true" frequency="30" boards="sheen"/>
+	<coin id="nesmith" rare="true" frequency="20" boards="sheen"/>
+
+	<coin id="carly" rare="true" frequency="10" boards="iCarly"/>
+	<coin id="sam" rare="true" frequency="30" boards="iCarly"/>
+	<coin id="freddie" rare="true" frequency="20" boards="iCarly"/>
+
+	<coin id="tori" rare="true" frequency="5" boards="victorious"/>
+	<coin id="trina" rare="true" frequency="30" boards="victorious"/>
+	<coin id="andre" rare="true" frequency="20" boards="victorious"/>
+
+	<coin id="kyle" rare="true" frequency="30" boards="fanboy"/>
+	<coin id="fanboy" rare="true" frequency="5" boards="fanboy"/>
+	<coin id="chumchum" rare="true" frequency="20" boards="fanboy"/>
+
+	<coin id="kitty" rare="true" frequency="20" boards="tuffPuppy"/>
+	<coin id="dudley" rare="true" frequency="5" boards="tuffPuppy"/>
+	<coin id="keswick" rare="true" frequency="30" boards="tuffPuppy"/>
+
+</coins>

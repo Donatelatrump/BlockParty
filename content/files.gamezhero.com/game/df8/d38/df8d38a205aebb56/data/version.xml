@@ -1,0 +1,24 @@
+<build>
+	<partial file="index.html" description="Game" isPublic="true" />
+	<partial file="index-debug.html" description="DEBUG" isPublic="false"/>
+	<partial file="index-loadall.html" description="Load All" isPublic="true"/>
+	<partial file="index-board.html" description="Board" isPublic="true"/>
+	<partial file="index-splash.html" description="Splash" isPublic="true"/>
+	<partial file="index-fleas.html" description="Fleas" isPublic="true"/>
+	<partial file="index-hockey.html" description="Hockey" isPublic="true"/>
+	<partial file="index-lolly.html" description="Lollypop" isPublic="true"/>
+	<partial file="index-jumper.html" description="Jumper" isPublic="true"/>
+	<partial file="index-paint.html" description="Paint" isPublic="true"/>
+	<partial file="index-simon.html" description="Simon" isPublic="true"/>
+	<partial file="index-teetering.html" description="Teetering" isPublic="true"/>
+	<partial file="index-falling.html" description="Falling" isPublic="true"/>
+	<partial file="index-lockers.html" description="Lockers" isPublic="true"/>
+	<partial file="index-bouncybed.html" description="Bouncybed" isPublic="true"/>
+	<partial file="index-catch.html" description="Catch" isPublic="true"/>
+	<partial file="index-dodge.html" description="Dodge" isPublic="true"/>
+	<partial file="index-escapeyo.html" description="EscapeYO" isPublic="true"/>
+	<partial file="index-pizza_pursuit.html" description="PizzaPursuit" isPublic="true"/>
+	<partial file="index-king_of_the_heap.html" description="KingOfTheHeap" isPublic="true"/>
+	<partial file="index-apartment_maze.html" description="ApartmentMaze" isPublic="true"/>
+	<partial file="index-demanding_goat.html" description="DemandingGoat" isPublic="true"/>
+</build>

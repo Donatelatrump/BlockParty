@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<players>
+
+	 
+	<player id="bob">
+		<!-- Reserved mostly for the faces in selectors and huds -->
+		<ui picture="spongebob" />
+
+		<assets>
+			<!-- The main movieclip associated with the character -->
+			<generic>characters.bob</generic>
+
+			<!-- In case a game uses a special version of the character include it here as in the example -->
+			<minigames>
+				<!-- Use the same ID referenced in Minigames.as -->
+				<minigame id="lolly">characters.bob.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	
+	<player id="mikey">
+
+		<assets>
+			<generic>characters.mikey</generic>
+			<minigames>
+				<minigame id="lolly">characters.mikey.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	<player id="sam">
+
+		<assets>
+			<generic>characters.sam</generic>
+			<minigames>
+				<minigame id="lolly">characters.sam.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	<player id="cat">
+
+		<assets>
+			<generic>characters.cat</generic>
+			<minigames>
+				<minigame id="lolly">characters.cat.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	
+
+	<player id="fanboy">
+
+		<assets>
+			<!-- The main movieclip associated with the character -->
+			<generic>characters.fanboy</generic>
+
+			<!-- In case a game uses a special version of the character include it here as in the example -->
+			<minigames>
+				<!-- Use the same ID referenced in Minigames.as -->
+				<minigame id="putTheMinigameIdHere">put.the.custom.linkage.here</minigame>
+				<minigame id="lolly">characters.fanboy.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+
+	<player id="skipper">
+
+		<assets>
+			<!-- The main movieclip associated with the character -->
+			<generic>characters.skipper</generic>
+
+			<!-- In case a game uses a special version of the character include it here as in the example -->
+			<minigames>
+				<!-- Use the same ID referenced in Minigames.as -->
+				<minigame id="putTheMinigameIdHere">put.the.custom.linkage.here</minigame>
+				<minigame id="lolly">characters.skipper.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+
+	<player id="sheen">
+
+		<assets>
+			<generic>characters.sheen</generic>
+			<minigames>
+				<minigame id="lolly">characters.sheen.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+
+	<player id="tuff">
+
+		<assets>
+			<generic>characters.puppy</generic>
+			<minigames>
+				<minigame id="lolly">characters.dudleypuppy.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+
+	<player id="carly">
+
+		<assets>
+			<generic>characters.carly</generic>
+			<minigames>
+				<minigame id="lolly">characters.carly.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+
+	<player id="tori">
+
+		<assets>
+			<generic>characters.tori</generic>
+			<minigames>
+				<minigame id="lolly">characters.tori.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	<player id="chumchum">
+
+		<assets>
+			<generic>characters.chumchum</generic>
+			<minigames>
+				<minigame id="lolly">characters.chumchum.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	<player id="kitty">
+
+		<assets>
+			<generic>characters.kitty</generic>
+			<minigames>
+				<minigame id="lolly">characters.kitty.lollypop</minigame>
+			</minigames>
+		</assets>
+
+		<audio>
+		</audio>
+	</player>
+	
+	
+
+</players>

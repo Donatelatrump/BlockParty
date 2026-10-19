@@ -1,0 +1,17 @@
+node_modules
+dist
+screenshots
+.tmp-extracted/
+.vercel
+.env
+.env.local
+*.log
+
+.vercel
+.env*
+
+.test-build/
+.browser-build/
+.browser-profile/
+
+.asset-extraction/

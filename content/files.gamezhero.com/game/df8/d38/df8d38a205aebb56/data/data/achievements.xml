@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements>
+
+	<achievement id="SpongeBobulous" code="_game_10" description="">
+		<conditions>
+			<condition id="earnCoin-bob" times="1"/>
+		</conditions>
+	</achievement>
+
+	<achievement id="Skiptacular" code="_game_20" description="">
+		<conditions>
+			<condition id="earnCoin-skipper" times="1"/>
+		</conditions>
+	</achievement>
+
+	<achievement id="PlanetSheenBadge" code="_game_30" description="">
+		<conditions>
+			<condition id="earnCoin-sheen" times="1"/>
+		</conditions>
+	</achievement>
+
+	<achievement id="iCarlyBadge" code="_game_40" description="">
+		<conditions>
+			<condition id="earnCoin-carly" times="1"/>
+		</conditions>
+	</achievement>
+
+	<achievement id="VictoriousBadge" code="_game_50" description="">
+		<conditions>
+			<condition id="earnCoin-tori" times="1"/>
+		</conditions>
+	</achievement>
+
+	<achievement id="id6" code="_game_100" description="">
+		<conditions>
+			<condition id="earnCoin-bob" times="1"/>
+			<condition id="earnCoin-krabs" times="1"/>
+			<condition id="earnCoin-gary" times="1"/>
+
+			<condition id="earnCoin-skipper" times="1"/>
+			<condition id="earnCoin-mort" times="1"/>
+			<condition id="earnCoin-julien" times="1"/>
+
+			<condition id="earnCoin-nesmith" times="1"/>
+			<condition id="earnCoin-dorkus" times="1"/>
+			<condition id="earnCoin-sheen" times="1"/>
+
+			<condition id="earnCoin-andre" times="1"/>
+			<condition id="earnCoin-tori" times="1"/>
+			<condition id="earnCoin-trina" times="1"/>
+
+			<condition id="earnCoin-carly" times="1"/>
+			<condition id="earnCoin-freddie" times="1"/>
+			<condition id="earnCoin-sam" times="1"/>
+
+			<condition id="earnCoin-keswick" times="1"/>
+			<condition id="earnCoin-kitty" times="1"/>
+			<condition id="earnCoin-dudley" times="1"/>
+
+			<condition id="earnCoin-chumchum" times="1"/>
+			<condition id="earnCoin-fanboy" times="1"/>
+			<condition id="earnCoin-kyle" times="1"/>
+		</conditions>
+	</achievement>
+
+</achievements>

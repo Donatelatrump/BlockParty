@@ -1,0 +1,201 @@
+hud.swf Movie Report
+---------------------
+
+Frame #    Frame Bytes    Total Bytes    Scene
+-------    -----------    -----------    ----------------
+      1        1456158        1456158    Scene 1 (AS 3.0 Classes Export Frame)
+
+Scene                        Shape Bytes    Text Bytes    ActionScript Bytes
+-------------------------    -----------    ----------    ------------------
+Scene 1                                0             0                     0
+
+Symbol                       Shape Bytes    Text Bytes    ActionScript Bytes
+-------------------------    -----------    ----------    ------------------
+genericCursor                          0             0                     0
+minigameCommonControls                 0             0                     0
+idleCursor                             0             0                     0
+globo01                                0           261                     0
+diceNormal                             0             0                     0
+diceOver                               0             0                     0
+dice                                   0             0                     0
+diceOptions                            0           294                     0
+coinPoints                             0             0                     0
+diceNumber                             0             0                     0
+diceColor                              0             0                     0
+dice_txt                               0           137                     0
+dice_number_anim                      50             0                     0
+dice_out2                              0             0                     0
+dice_out2_red                          0             0                     0
+diceSeparator                          0             0                     0
+Symbol 1                               0             0                     0
+ingameControls                         0             0                     0
+players                                0             0                     0
+message1                               0             0                     0
+userInterface                          0             0                     0
+turnAnimText                           0             0                     0
+turnAnim                               0             0                     0
+faces                                  0             0                     0
+hud                                    0             0                     0
+hitbox                                 0             0                     0
+boardArrow                             0             0                     0
+genericButton                          0             0                     0
+playerPosition                         0           133                     0
+playerTH                               0           134                     0
+playerCoins                            0           135                     0
+playerNameAzul                         0           135                     0
+playerNameViol                         0           135                     0
+playerName                             0           135                     0
+playerInfo                             0             0                     0
+characters                             0             0                     0
+hit                                   33             0                     0
+soundIcon                              0             0                     0
+menuIcon                               0             0                     0
+zoomIcon                               0             0                     0
+closeIcon                              0             0                     0
+txt02                                  0           141                     0
+txt03                                  0             0                     0
+txt05                                  0           141                     0
+txt04                                  0           136                     0
+turnCont                               0             0                     0
+turn                                   0             0                     0
+dice_in                                0             0                     0
+dice_in_red                            0             0                     0
+dice_final                             0             0                     0
+dice_final_red                         0             0                     0
+dice                                   0             0                     0
+dice red                               0             0                     0
+dice_out                               0             0                     0
+sparks                                 0             0                     0
+txt04                                  0           136                     0
+txtArea                                0             0                     0
+txt_empty_slot                         0             0                     0
+itemAnim                             141             0                     0
+hitarea                               32             0                     0
+Symbol 1                               0             0                     0
+txt07                                  0           139                     0
+txt06                                 49             0                     0
+backs01                                0             0                     0
+diceCounterGradient                    0           141                     0
+diceCounterAnim                       49             0                     0
+diceCounter                            0             0                     0
+loaderBackAnim                         0             0                     0
+charactersL                            0             0                     0
+characterLoader                        0             0                     0
+
+Font Name                 Bytes        Characters    
+----------------------    ---------    --------------
+_sans Bold                     4992    
+_sans                          4998    
+
+ActionScript Bytes    Location
+------------------    --------
+              5660    ActionScript 3.0 Classes
+
+Bitmap                     Compressed    Compression
+-----------------------    ----------  --------  -----------
+dice_shake_2.png               27152     1228800   JPEG Quality=80
+dice_shake_3.png               29783     1228800   JPEG Quality=80
+dice_shake_4.png               28065     1228800   JPEG Quality=80
+dice_shake_5.png               26618     1228800   JPEG Quality=80
+dice_shake_6.png               28652     1228800   JPEG Quality=80
+dice_shake_7.png               27488     1228800   JPEG Quality=80
+dice_shake_8.png               26521     1228800   JPEG Quality=80
+dice_shake_9.png               27491     1228800   JPEG Quality=80
+dice_shake_11.png              27280     1228800   JPEG Quality=80
+dice_final_uno_20.png          21733     1228800   JPEG Quality=80
+dice_final_uno_23.png          21370     1228800   JPEG Quality=80
+dice_final_uno_24.png          19542     1228800   JPEG Quality=80
+dice_final_uno_26.png          19536     1228800   JPEG Quality=80
+dice_final_uno_27.png          19609     1228800   JPEG Quality=80
+dice_final_dos_20.png          21982     1228800   JPEG Quality=80
+dice_final_dos_23.png          21446     1228800   JPEG Quality=80
+dice_final_dos_24.png          19767     1228800   JPEG Quality=80
+dice_final_dos_26.png          19870     1228800   JPEG Quality=80
+dice_final_dos_27.png          19975     1228800   JPEG Quality=80
+dice_final_tres_20.png         21950     1228800   JPEG Quality=80
+dice_final_tres_23.png         21475     1228800   JPEG Quality=80
+dice_final_tres_24.png         19716     1228800   JPEG Quality=80
+dice_final_tres_26.png         19812     1228800   JPEG Quality=80
+dice_final_tres_27.png         19931     1228800   JPEG Quality=80
+dice_final_cuatro_20.png       22027     1228800   JPEG Quality=80
+dice_final_cuatro_23.png       21473     1228800   JPEG Quality=80
+dice_final_cuatro_24.png       19788     1228800   JPEG Quality=80
+dice_final_cuatro_26.png       19853     1228800   JPEG Quality=80
+dice_final_cuatro_27.png       19946     1228800   JPEG Quality=80
+dice_final_cinco_20.png        21950     1228800   JPEG Quality=80
+dice_final_cinco_23.png        21528     1228800   JPEG Quality=80
+dice_final_cinco_24.png        19746     1228800   JPEG Quality=80
+dice_final_cinco_26.png        19864     1228800   JPEG Quality=80
+dice_final_cinco_27.png        19983     1228800   JPEG Quality=80
+dice_final_seis_20.png         21998     1228800   JPEG Quality=80
+dice_final_seis_23.png         21501     1228800   JPEG Quality=80
+dice_final_seis_24.png         19797     1228800   JPEG Quality=80
+dice_final_seis_26.png         19870     1228800   JPEG Quality=80
+dice_final_seis_27.png         20009     1228800   JPEG Quality=80
+dice_explosion_0001.png        20009      880000   JPEG Quality=80
+sparks_0001.png copia          10110      297000   JPEG Quality=80
+dice_explosion_0002.png        36180      880000   JPEG Quality=80
+sparks_0002.png copia          16581      297000   JPEG Quality=80
+dice_explosion_0003.png        24751      880000   JPEG Quality=80
+sparks_0003.png copia          11557      297000   JPEG Quality=80
+dice_explosion_0004.png        10968      880000   JPEG Quality=80
+sparks_0004.png copia           5416      297000   JPEG Quality=80
+dice_explosion_0005.png         7751      880000   JPEG Quality=80
+sparks_0005.png copia           3764      297000   JPEG Quality=80
+turnBar copy                   33788     1509120   JPEG Quality=80
+turnBar02                      23571     1509120   JPEG Quality=80
+turnBar03                      16942     1509120   JPEG Quality=80
+turn_spongebob                 37514      727056   JPEG Quality=80
+turn_rico                      18916      727056   JPEG Quality=80
+turn_fanboy                    27669      727056   JPEG Quality=80
+turn_tuff                      27468      727056   JPEG Quality=80
+turn_sheen                     23154      514568   JPEG Quality=80
+flecha_naranja_1.png            1880       17520   JPEG Quality=80
+flecha_naranja_1_over.png       4943       37536   JPEG Quality=80
+flecha_naranja_2.png            1696       17568   JPEG Quality=80
+flecha_naranja_2_over.png       4406       35600   JPEG Quality=80
+flecha_naranja_4.png            1779       17520   JPEG Quality=80
+flecha_naranja_4_over.png       4702       35640   JPEG Quality=80
+flecha_naranja_3.png            1885       17520   JPEG Quality=80
+flecha_naranja_3_over.png       4707       35600   JPEG Quality=80
+hud_popnaranja                  9633       84224   Lossless
+score_spongebob                 5085       36096   JPEG Quality=80
+score_rico                      2580       36096   JPEG Quality=80
+score_fanboy                    3262       36096   JPEG Quality=80
+score_tuff                      3838       36096   JPEG Quality=80
+score_sheen                     3240       36096   JPEG Quality=80
+hud_popvioleta                  8738       84224   Lossless
+hud_popazul                     8517       84224   Lossless
+hud_oblea.png                    997      254180   Lossless
+store_icono_dadotriple_01.png     21719      116232   Lossless
+store_icono_anteojos_01.png      7269      119232   JPEG Quality=80
+store_icono_antifaz_01.png      7030      117600   JPEG Quality=80
+store_icono_dado_01.png         7691       76176   JPEG Quality=80
+store_icono_pared_01.png        6712      115456   JPEG Quality=80
+store_icono_dadodoble_01.png      9225      127512   JPEG Quality=80
+store_icono_moneda_01.png       5850       92584   JPEG Quality=80
+store_icono_vaso_01.png         7985      114536   JPEG Quality=80
+storeGlobo                      6871       60888   Lossless
+dice_final_tres_21.png         22131     1228800   JPEG Quality=80
+genHud_soundMuteOn              1040        6708   JPEG Quality=80
+genHud_soundOn                   594        6708   Lossless
+genHud_soundMuteOver            1425        6708   JPEG Quality=80
+genHud_soundOver                1204        6708   Lossless
+genHud_menuOn                    594        5544   Lossless
+genHud_menuOver                 1250        5544   Lossless
+genHud_closeOn                   542        5476   Lossless
+genHud_closeOver                1173        5476   Lossless
+genHud_lupaOn                    892        5904   JPEG Quality=80
+genHud_lupaOver                 1352        5904   JPEG Quality=80
+plusSign.png                    3180       36000   JPEG Quality=80
+charactersLoader_back           2481       15876   Lossless
+charactersLoader_char01         2217       15876   JPEG Quality=80
+charactersLoader_char02         2546       15876   JPEG Quality=80
+charactersLoader_char03         2235       15876   JPEG Quality=80
+charactersLoader_char04         2319       15876   JPEG Quality=80
+charactersLoader_char05         2264       15876   JPEG Quality=80
+cursor                          1246        7520   Lossless
+
+
+
+
