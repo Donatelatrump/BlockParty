@@ -1,0 +1,202 @@
+{
+  "martin": {
+    "name": "Martín",
+    "fps": 8,
+    "animations": {
+      "idlingSE": [
+        {
+          "file": "custom/martin/idle_SE_01.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_02.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_03.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_04.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_05.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_06.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_07.png"
+        },
+        {
+          "file": "custom/martin/idle_SE_08.png"
+        }
+      ]
+    },
+    "framing": {
+      "x": 0.36328125,
+      "y": 0.09375,
+      "width": 0.2734375,
+      "height": 0.78125,
+      "aspect": 0.35
+    },
+    "portrait": "custom/martin/idle_SE_01.png"
+  },
+  "jovany": {
+    "name": "Jovany",
+    "fps": 8,
+    "animations": {
+      "idlingSE": [
+        {
+          "file": "custom/jovany/idle_SE_01.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_02.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_03.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_04.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_05.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_06.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_07.png"
+        },
+        {
+          "file": "custom/jovany/idle_SE_08.png"
+        }
+      ]
+    },
+    "framing": {
+      "x": 0.36328125,
+      "y": 0.09375,
+      "width": 0.2734375,
+      "height": 0.78125,
+      "aspect": 0.35
+    },
+    "portrait": "custom/jovany/idle_SE_01.png"
+  },
+  "luna": {
+    "name": "Luna",
+    "fps": 8,
+    "animations": {
+      "idlingSE": [
+        {
+          "file": "custom/luna/idle_SE_01.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_02.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_03.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_04.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_05.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_06.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_07.png"
+        },
+        {
+          "file": "custom/luna/idle_SE_08.png"
+        }
+      ]
+    },
+    "framing": {
+      "x": 0.35546875,
+      "y": 0.09375,
+      "width": 0.28515625,
+      "height": 0.78125,
+      "aspect": 0.365
+    },
+    "portrait": "custom/luna/idle_SE_01.png"
+  },
+  "marfileno": {
+    "name": "Marfileño",
+    "fps": 8,
+    "animations": {
+      "idlingSE": [
+        {
+          "file": "custom/marfileno/idle_SE_01.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_02.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_03.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_04.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_05.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_06.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_07.png"
+        },
+        {
+          "file": "custom/marfileno/idle_SE_08.png"
+        }
+      ]
+    },
+    "framing": {
+      "x": 0.35546875,
+      "y": 0.09375,
+      "width": 0.28515625,
+      "height": 0.78125,
+      "aspect": 0.365
+    },
+    "portrait": "custom/marfileno/idle_SE_01.png"
+  },
+  "yocsan": {
+    "name": "Yocsan",
+    "fps": 8,
+    "animations": {
+      "idlingSE": [
+        {
+          "file": "custom/yocsan/idle_SE_01.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_02.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_03.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_04.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_05.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_06.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_07.png"
+        },
+        {
+          "file": "custom/yocsan/idle_SE_08.png"
+        }
+      ]
+    },
+    "framing": {
+      "x": 0.35546875,
+      "y": 0.09375,
+      "width": 0.28515625,
+      "height": 0.78125,
+      "aspect": 0.365
+    },
+    "portrait": "custom/yocsan/idle_SE_01.png"
+  }
+}

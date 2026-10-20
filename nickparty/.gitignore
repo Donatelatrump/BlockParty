@@ -15,3 +15,5 @@ screenshots
 .browser-profile/
 
 .asset-extraction/
+
+__pycache__/

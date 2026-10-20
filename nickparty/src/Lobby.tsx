@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BOARD_THEMES, DEFAULT_BOARD_THEME, DEFAULT_ROUNDS, ROUND_OPTIONS } from '../shared/game';
+import { BOARD_THEMES, DEFAULT_BOARD_THEME, DEFAULT_ROUNDS, MAX_PLAYERS, ROUND_OPTIONS } from '../shared/game';
 import type { BoardThemeId } from '../shared/game';
 import type { GameApi } from './useGame';
 import { CharacterAvatar } from './CharacterAvatar';
@@ -76,6 +76,7 @@ export function Lobby({ api }: { api: GameApi }) {
             </li>
           ))}
           {state.players.length === 0 && <li className="player-empty">Esperando jugadores…</li>}
+          {Array.from({ length: Math.max(0, MAX_PLAYERS - state.players.length) }, (_, index) => <li className="player-row player-slot" key={`slot-${index}`}><span className="slot-number">{state.players.length + index + 1}</span><span>Plaza disponible</span></li>)}
         </ul>
 
         {isHost ? (

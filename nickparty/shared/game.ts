@@ -1,4 +1,5 @@
 import { BOARD_PATHS } from './board-paths.js';
+import customCharacters from './custom-characters.json' with { type: 'json' };
 // Motor de dominio compartido entre el servidor autoritativo y el cliente.
 // Aquí solo viven tipos puros y utilidades deterministas (sin red, sin DOM).
 
@@ -44,7 +45,7 @@ export const DEFAULT_BOARD_THEME: BoardThemeId = 'spongeBob';
 export const TILE_COUNT = 45;
 
 export const DEFAULT_ROUNDS = 6;
-export const ROUND_OPTIONS = [4, 6, 8, 12] as const;
+export const ROUND_OPTIONS = [4, 6, 8, 10, 12, 15, 20] as const;
 
 export const MINIGAME_DURATION_MS = 9000;
 export const ROLL_DELAY_MS = 850;
@@ -95,6 +96,7 @@ export interface MinigameState {
   kind: 'coin-rush' | 'memory' | 'whack' | import('./minigames').OriginalMinigame;
   startsAt?: number;
   resultsUntil?: number;
+  rewards?: Record<string, number>;
   arena?: import('./minigames').ArenaState;
   cards: number[];
   revealed: number[];
@@ -144,6 +146,7 @@ export const CHARACTERS = [
   { id: 'skipper', name: 'Skipper' },
   { id: 'sheen', name: 'Sheen' },
   { id: 'tori', name: 'Tori' },
+  ...Object.entries(customCharacters).map(([id, character]) => ({ id, name: character.name })),
 ] as const;
 
 export const AVATARS: string[] = CHARACTERS.map((character) => character.id);
@@ -186,8 +189,8 @@ export function boardPathPos(theme: BoardThemeId, index: number, _tileCount = TI
 
 export function tileLabel(type: TileType): string {
   switch (type) {
-    case 'red': return '-3 monedas';
-    case 'blue': return '+3 monedas';
+      case 'red': return '-5 monedas';
+      case 'blue': return '+5 monedas';
     case 'shop': return 'Tienda';
     case 'goodBad': return 'Suerte o mala suerte';
     case 'trivia': return 'Trivia';
@@ -198,7 +201,7 @@ export function tileLabel(type: TileType): string {
 }
 
 export function tileIcon(type: TileType): string {
-  return { red: '-3', blue: '+3', shop: '\u{1F6D2}', goodBad: '\u00b1', trivia: '?', surprise: '\u{1F381}', challenge: '\u2694', extraRoll: '\u{1F3B2}' }[type];
+    return { red: '-5', blue: '+5', shop: '\u{1F6D2}', goodBad: '\u00b1', trivia: '?', surprise: '\u{1F381}', challenge: '\u2694', extraRoll: '\u{1F3B2}' }[type];
 }
 
 export function sanitizeName(raw: string): string {

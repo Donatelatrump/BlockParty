@@ -1,0 +1,87 @@
+{
+  "paint": {
+    "background": "paint/world-1.png",
+    "foreground": "paint/world-12.png"
+  },
+  "jumper": {
+    "background": "jumper/main-186.png",
+    "spatula": "jumper/main-32.png"
+  },
+  "falling": {
+    "background": "falling/main-46.png",
+    "platform": "falling/main-33.png"
+  },
+  "escape": {
+    "background": "escape/world-35.png",
+    "oom": "escape/characters-163.png",
+    "oom-windup": "escape/characters-177.png",
+    "oom-strike": "escape/characters-191.png"
+  },
+  "teetering": {
+    "background": "teetering/teetering-64.png",
+    "log": "teetering/teetering-199.png"
+  },
+  "catcher": {
+    "background": "catcher/world-129.png"
+  },
+  "fleas": {
+    "background": "fleas/world-802.png",
+    "flea": "fleas/fleas-1.png",
+    "tweezers": "fleas/tweezers-16.png"
+  },
+  "lockers": {
+    "background": "lockers/world-3.png",
+    "locker": "lockers/world-59.png"
+  },
+  "lolly": {
+    "background": "lollypop/world-1.png",
+    "table": "lollypop/world-5.png",
+    "lollipop": "lollypop/world-8.png"
+  },
+  "bouncybed": {
+    "background": "bed/world-67.png",
+    "beds": "bed/world-66.png"
+  },
+  "simon": {
+    "background": "simon/world-32.png",
+    "machine": "simon/world-31.png"
+  },
+  "airhockey": {
+    "background": "airhockey/world-107.png",
+    "table": "airhockey/world-104.png"
+  },
+  "escapeyo": {
+    "background": "escapeyo/world-61.png",
+    "crate": "escapeyo/world-33.png",
+    "yo": "escapeyo/world-74.png"
+  },
+  "pizza_pursuit": {
+    "crate": "pizza_pursuit/world-139.png",
+    "pipe": "pizza_pursuit/world-136.png",
+    "slime": "pizza_pursuit/world-157.png",
+    "pizza": "pizza_pursuit/world-23.png"
+  },
+  "king_of_the_heap": {
+    "background": "king_of_the_heap/world-148.png",
+    "garbage": "king_of_the_heap/world-92.png"
+  },
+  "apartment_maze": {
+    "background": "apartment_maze/world-178.png",
+    "door": "apartment_maze/world-159.png",
+    "frame": "apartment_maze/world-157.png"
+  },
+  "demanding_goat": {
+    "background": "demanding_goat/world-112.png",
+    "goat": "demanding_goat/world-136.png",
+    "table": "demanding_goat/world-123.png",
+    "tomato": "demanding_goat/world-87.png",
+    "carrot": "demanding_goat/world-101.png",
+    "peas": "demanding_goat/world-99.png",
+    "pizza": "demanding_goat/world-91.png"
+  },
+  "dodge": {
+    "jelly": "dodge/world-65.png",
+    "decoy": "dodge/world-44.png",
+    "bubble": "dodge/world-39.png"
+  }
+}

@@ -82,3 +82,36 @@ npm run test:browser
 `npm test` incluye partidas completas con ocho jugadores en los nueve mapas, los 18 minijuegos con ocho participantes, selección sin repeticiones, ventanas de salto, memoria de secuencias, clasificación de pulgas, pintura, puertas del laberinto, bonificaciones, pausa durante resultados y validación de los 589 fotogramas con sus máscaras. También verifica CPU, cruces, compra durante el movimiento, congelación, reconexión, privacidad y sockets reales. La prueba entre dos pasarelas usa ioredis contra una simulación local del protocolo Redis; no sustituye una prueba con Redis de producción.
 
 `test:browser` necesita servidor local y Brave instalado; `BRAVE_PATH` permite elegir otro Chromium. Recorre tienda y trivia, elige caminos, juega y verifica el resultado en dos pestañas. En entornos que impiden iniciar navegadores puede fallar con `EPERM`.
+
+
+## Controles y revisión visual
+
+Usa WASD o flechas para moverte y Espacio para la acción indicada. En celular aparecen botones táctiles: puedes mantener una dirección y saltar con otro dedo. Los juegos de selección permiten tocar sus objetivos; las pulgas y los alimentos también se pueden arrastrar. El dado se lanza sobre el tablero. El mapa admite arrastre y zoom con dos dedos.
+
+`npm run check:gameplay-ui`, con `npm run dev` activo, verifica los 21 escenarios en escritorio y tres tamaños táctiles. Guarda capturas en `screenshots/gameplay`. `BRAVE_PATH` permite indicar otro Chromium.
+
+Los fondos, objetos y monedas se regeneran con `python scripts/extract-minigame-media.py` (requiere Pillow). Consulta [la comparación con el original](REVISION_FIDELIDAD.md) para las correcciones y las diferencias que permanecen.
+
+
+El catálogo incluye los 18 minijuegos basados en Block Party y tres pruebas nuevas: **Islas de color**, **Semáforo tramposo** y **Tesoro bajo fuego**. El salto tiene altura compartida con la colisión y respuesta de golpe/salto limpio. El laberinto cambia en cada partida y requiere dos llaves, con visibilidad limitada tras una breve vista inicial.
+
+
+El inicio incluye selección mediante tarjetas, vista animada con encuadre uniforme, nombres, marca del personaje elegido y navegación con flechas del teclado. `npm run check:home-ui` verifica selección, persistencia, tamaños 1440/390/320 y una sala real con ocho conexiones; captura el inicio y el tablero en `screenshots/home`.
+
+`npm run check:animation-ui` comprueba varios ciclos de los ocho personajes mediante 72 capturas y análisis de píxeles (requiere Pillow). Cada fotograma conserva su imagen y máscara; solo cambia la opacidad, para evitar parpadeos al resolver otra máscara.
+
+La prueba de red de ocho jugadores recorre los 21 minijuegos, compara el estado recibido por todos, mantiene ocho controles simultáneos durante 160 acciones, rechaza una novena plaza y verifica la reconexión sin duplicar jugadores. Es una prueba local; no mide latencia en Internet ni dispositivos físicos.
+
+
+## Personaje personalizado: Martín
+
+Los ocho archivos de `../Personajes_Personalizados/Martin/idle_SE_01.png` a `idle_SE_08.png` forman una sola animación de reposo. `python scripts/import-custom-character.py` genera copias PNG transparentes de 256×256 en `public/assets/custom/martin`, con escala común y pies alineados; los originales permanecen intactos. El encuadre ignora ruido casi transparente del exportador. El manifiesto es `shared/custom-characters.json`.
+
+Martín aparece como noveno personaje del catálogo, con un máximo independiente de ocho jugadores. El reposo se reproduce a 8 fotogramas por segundo. Las direcciones y acciones que todavía no tienen dibujos propios utilizan el reposo como sustituto; el salto vertical sigue a cargo de la física del juego. No se presentan esos sustitutos como animaciones completas de caminar, saltar, daño o celebración.
+
+`node scripts/check-custom-character-ui.mjs` verifica transparencia nativa, bucle y sustitutos de acciones/direcciones sin archivos ausentes. La selección y las pruebas de animación incluyen a los nueve personajes; las pruebas de minijuegos mantienen ocho participantes e incluyen a Martín.
+
+
+La importación personalizada ahora recorre todas las subcarpetas de `../Personajes_Personalizados`: **Martín, Jovany, Luna, Marfileño y Yocsan**. El catálogo suma 13 personajes y conserva un máximo de ocho jugadores. Cada carpeta tiene ocho fotogramas de reposo; las acciones sin dibujos propios continúan usando el sustituto de reposo. Los IDs se normalizan para rutas (por ejemplo, `Marfileño` → `marfileno`), conservando el nombre visible.
+
+Escape Oom incorpora preparación, extensión, golpe y retirada con poses originales y un carril iluminado. Cada ciclo se reduce de 3200 a 1500 ms, manteniendo al menos 1200 ms desde el aviso hasta el golpe. El servidor, la CPU y la animación usan el mismo reloj; Espacio no activa un salto en este minijuego.

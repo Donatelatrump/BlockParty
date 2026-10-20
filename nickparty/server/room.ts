@@ -122,7 +122,7 @@ export class Room {
           if (st.minigame.resultsUntil !== undefined) st.minigame.resultsUntil += elapsed;
           if (st.minigame.arena) {
             st.minigame.arena.lastTick += elapsed;
-            for (const p of Object.values(st.minigame.arena.players)) { p.jumpUntil += elapsed; p.lastInput += elapsed; p.lastAction += elapsed; }
+            for (const p of Object.values(st.minigame.arena.players)) { p.jumpUntil += elapsed; p.lastInput += elapsed; p.lastAction += elapsed; if (p.feedbackUntil) p.feedbackUntil += elapsed; if (p.stunUntil) p.stunUntil += elapsed; if (p.fallStartedAt !== undefined) p.fallStartedAt += elapsed; }
           }
           for (const coin of st.minigame.coins) {
             if (coin.appearsAt !== undefined) coin.appearsAt += elapsed;
@@ -230,7 +230,7 @@ export class Room {
     st.pathChoice = null;
     st.movement = null;
     for (const x of st.players) {
-      x.coins = 0;
+      x.coins = 10;
       x.gold = 0;
       x.stats = { minigameCoins: 0, blueSpaces: 0, triviaCorrect: 0 };
       x.pos = 0;
@@ -709,7 +709,8 @@ export class Room {
     if (mg.arena) {
       const input = cpuInput(mg, playerId, Date.now());
       if (input) this.miniInput(playerId, input);
-      this.#after(260 + Math.random() * 240, () => this.#cpuMinigameStep(playerId, gameId));
+      const reaction = ['fleas', 'lockers', 'demanding_goat'].includes(mg.kind) ? 1000 + Math.random() * 700 : 180 + Math.random() * 200;
+      this.#after(reaction, () => this.#cpuMinigameStep(playerId, gameId));
       return;
     }
     if (mg.kind === 'memory') {
@@ -738,10 +739,12 @@ export class Room {
       tickArena(mg, st.players, Math.min(Date.now(), mg.endsAt));
       mg.endsAt = Date.now();
       mg.resultsUntil = Date.now() + RESULTS_MS;
+      mg.rewards = {};
       for (const p of st.players) {
         const score = mg.collected[p.id] ?? 0;
         const gained = mg.arena ? Math.min(20, Math.floor(score / (mg.kind === 'lolly' || mg.kind === 'pizza_pursuit' || mg.kind === 'king_of_the_heap' || mg.kind === 'bouncybed' ? 5 : 1))) : score;
         p.coins += gained;
+        mg.rewards[p.id] = gained;
         p.stats ??= { minigameCoins: 0, blueSpaces: 0, triviaCorrect: 0 };
         p.stats.minigameCoins += gained;
         this.#log(`${p.name}: ${score} puntos, +${gained} monedas`);

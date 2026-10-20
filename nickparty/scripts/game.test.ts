@@ -201,5 +201,5 @@ for (const theme of BOARD_THEMES) test(`complete four-round match on ${theme.id}
   assert.ok(lastRoundMinigame);
   assert.ok(room.start('0', 4, theme.id).ok);
   assert.equal(room.state.phase, 'playing');
-  assert.ok(room.state.players.every((p) => p.pos === 0 && p.coins === 0));
+  assert.ok(room.state.players.every((p) => p.pos === 0 && p.coins === 10));
 });

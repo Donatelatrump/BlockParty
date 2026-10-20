@@ -7,6 +7,7 @@ import { Minigame } from './Minigame';
 import type { GameApi } from './useGame';
 import { CharacterAvatar } from './CharacterAvatar';
 import { CharacterSprite } from './CharacterSprite';
+import { CoinBalance } from './Coins';
 
 const LEGEND: Array<RoomState['board'][number]['type']> = [
   'red', 'blue', 'shop', 'goodBad', 'trivia', 'surprise', 'challenge', 'extraRoll',
@@ -23,7 +24,7 @@ export function Game({ api }: { api: GameApi }) {
   return (
     <div className="game">
       <div className="game-main">
-        <Board state={state} me={me} onChoosePath={api.choosePath} onIntroChange={setCameraIntro} />
+        <Board state={state} me={me} onChoosePath={api.choosePath} onIntroChange={setCameraIntro} onRoll={api.roll} canRoll={canRoll} />
 
         {state.phase === 'choosingPath' && state.pathChoice && <div className="path-panel" role="status">
           <strong>{isMyTurn ? 'Elige tu camino' : `${turnPlayer?.name} está eligiendo un camino`}</strong>
@@ -71,8 +72,8 @@ export function Game({ api }: { api: GameApi }) {
               >
                 <CharacterAvatar id={p.avatar} className="score-avatar" color={p.color} />
                 <span className="score-name">{p.name}</span>
-                <span className="score-coins">🪙 {p.coins}</span>
-                <span className="score-gold">⭐ {p.gold}</span>
+                <span className="score-coins"><CoinBalance value={p.coins} /></span>
+                <span className="score-gold"><CoinBalance value={p.gold} gold /></span>
               </li>
             ))}
           </ul>
@@ -93,15 +94,6 @@ export function Game({ api }: { api: GameApi }) {
               }}>Usar</button>
             </div>;
           }) : <p className="waiting">Vacío. Compra objetos al caer en una tienda.</p>}
-        </div>
-
-        <div className="card panel dice-panel">
-          <div className={`die${state.dice !== null ? ' die-roll' : ''}`}>
-            {state.dice !== null ? state.dice : '🎲'}
-          </div>
-          <button className="btn btn-primary btn-lg" disabled={!canRoll} onClick={api.roll}>
-            {state.phase === 'playing' ? (isMyTurn ? 'Tirar dado' : 'Espera tu turno') : '…'}
-          </button>
         </div>
 
         <div className="card panel">

@@ -4,17 +4,21 @@ import type { RoomState } from '../shared/game';
 import { BOARD_THEMES, boardPathPos, tileIcon, tileLabel } from '../shared/game';
 import { CharacterSprite } from './CharacterSprite';
 import { DiceThrow } from './DiceThrow';
+import { Coin, CoinBurst, useCoinChanges } from './Coins';
 
 interface Props {
   state: RoomState;
   me: string | null;
   onChoosePath: (target: number) => void;
   onIntroChange: (active: boolean) => void;
+  onRoll: () => void;
+  canRoll: boolean;
 }
 
 const PLAY_ZOOM = 2.35;
 
-export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
+export function Board({ state, me, onChoosePath, onIntroChange, onRoll, canRoll }: Props) {
+  const coinChanges = useCoinChanges(state.players, state.id);
   const [zoom, setZoom] = useState(PLAY_ZOOM);
   const [following, setFollowing] = useState(true);
   const [touring, setTouring] = useState(true);
@@ -80,8 +84,11 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
     const element = viewport.current;
     if (!element) return;
     tourCancelled.current = false;
+    let disposed = false;
     setTouring(true);
     onIntroChange(true);
+    // Decoding or a throttled animation frame must never lock the first turn.
+    const tourDeadline = window.setTimeout(finishTour, 8500);
     const center = (point: { x: number; y: number }) => element.scrollTo({
       left: point.x / 100 * element.scrollWidth - element.clientWidth / 2,
       top: point.y / 100 * element.scrollHeight - element.clientHeight / 2,
@@ -92,7 +99,7 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
       return boardPathPos(theme.id, current.players[current.turn]?.pos ?? 0);
     };
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      center(currentPlayer()); finishTour(); return;
+      center(currentPlayer()); finishTour(); window.clearTimeout(tourDeadline); return;
     }
     const nodes = BOARD_PATHS[theme.id].nodes;
     const minX = Math.min(...nodes.map(p => p.x)), maxX = Math.max(...nodes.map(p => p.x));
@@ -108,12 +115,13 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
     const image = new Image();
     image.src = `/assets/boards/${theme.file}`;
     void image.decode().then(() => {
-      if (tourCancelled.current) return;
+      if (disposed || tourCancelled.current) return;
       const anchors = stops.map(toScroll);
       const started = performance.now();
       const animate = (time: number) => {
-        if (tourCancelled.current) return;
-        const progress = Math.min(anchors.length - 1, (time - started) / 1200);
+        if (disposed || tourCancelled.current) return;
+        // A frame timestamp can precede the decode callback within the same frame.
+        const progress = Math.max(0, Math.min(anchors.length - 1, (time - started) / 1200));
         const segment = Math.min(anchors.length - 2, Math.floor(progress));
         const t = progress - segment;
         const eased = t * t * (3 - 2 * t);
@@ -123,8 +131,8 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
         else tourFrame.current = requestAnimationFrame(animate);
       };
       tourFrame.current = requestAnimationFrame(animate);
-    }).catch(() => { if (!tourCancelled.current) finishTour(); });
-    return () => { tourCancelled.current = true; cancelAnimationFrame(tourFrame.current); };
+    }).catch(() => { if (!disposed && !tourCancelled.current) finishTour(); });
+    return () => { disposed = true; window.clearTimeout(tourDeadline); tourCancelled.current = true; cancelAnimationFrame(tourFrame.current); };
   }, [theme.id, state.id, onIntroChange]);
 
   useEffect(() => {
@@ -141,7 +149,7 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
     for (const ids of groups.values()) {
       ids.forEach((id, i) => {
         const angle = (i / ids.length) * Math.PI * 2 + Math.PI / 4;
-        const radius = ids.length > 1 ? 15 : 0;
+        const radius = ids.length > 3 ? 1.25 : ids.length > 1 ? .7 : 0;
         map.set(id, { dx: Math.cos(angle) * radius, dy: Math.sin(angle) * radius });
       });
     }
@@ -171,6 +179,7 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
     </div>
     <div className="board-stage">
     <DiceThrow state={state} />
+    {canRoll && <button className="board-roll" onClick={onRoll} aria-label="Tirar dado"><span aria-hidden="true">⚄</span><strong>Tirar dado</strong><small>Tu turno</small></button>}
     {touring && <div className="board-tour" role="status"><span>Explorando {theme.name}…</span><button className="btn btn-secondary" onClick={finishTour}>Ir al jugador</button></div>}
     <div className="board-caption"><strong>{theme.name}</strong><span>Ronda {Math.max(1, state.round)}/{state.maxRounds}</span></div>
     <div className="board-viewport" ref={viewport}
@@ -212,7 +221,7 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
         return (
           <div
             key={t.i}
-            className={`tile tile-${t.type}${state.blockedTiles.includes(t.i) ? ' tile-blocked' : ''}`}
+            className={`tile tile-${t.type}${state.players[state.turn]?.pos === t.i ? ' tile-current' : ''}${state.blockedTiles.includes(t.i) ? ' tile-blocked' : ''}`}
             style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
             title={`Casilla ${t.i + 1} · ${tileLabel(t.type)}`}
           >
@@ -227,7 +236,7 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
 
       {(() => {
         const pos = boardPathPos(theme.id, state.goldCoinPos, state.board.length);
-        return <div className="gold-coin-marker" style={{ left: `${pos.x}%`, top: `${pos.y}%` }} title="Moneda dorada: 20 monedas">★</div>;
+        return <div className="gold-coin-marker" style={{ left: `${pos.x}%`, top: `${pos.y}%` }} title="Moneda dorada: 20 monedas"><Coin gold /></div>;
       })()}
 
       {state.players.map((p) => {
@@ -248,14 +257,19 @@ export function Board({ state, me, onChoosePath, onIntroChange }: Props) {
             key={p.id}
             className={classes}
             style={{
-              left: `calc(${pos.x}% + ${off.dx}px)`,
-              top: `calc(${pos.y}% + ${off.dy}px)`,
+              left: `${pos.x + (movement ? 0 : off.dx)}%`,
+              top: `${pos.y + (movement ? 0 : off.dy)}%`,
               background: p.color,
+              zIndex: Math.round(pos.y * 10) + 10,
             }}
             title={`${p.name} · ${p.coins} monedas · ${p.gold} estrellas`}
           >
             <CharacterSprite id={p.avatar} state={movement ? 'walk' : p.frozenTurns > 0 ? 'hurt' : 'idle'} facing={movement && boardPathPos(theme.id, movement.to).y < boardPathPos(theme.id, movement.from).y ? 'NE' : 'SE'} flip={!!movement && boardPathPos(theme.id, movement.to).x < boardPathPos(theme.id, movement.from).x} label={p.name} />
             <span className="token-name">{p.name}</span>
+            {coinChanges.filter(change => change.playerId === p.id).map(change => <span className="token-coins" key={change.id}>
+              {change.coins !== 0 && <CoinBurst amount={change.coins} />}
+              {change.gold !== 0 && <CoinBurst amount={change.gold} gold />}
+            </span>)}
           </div>
         );
       })}
